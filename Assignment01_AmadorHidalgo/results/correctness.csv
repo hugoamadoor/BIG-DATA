@@ -1,0 +1,54 @@
+test,n,language,max_abs_error,max_rel_error,rtol_used,passed
+identity*M,7,C,0.000e+00,0.000e+00,exact,1
+identity*M,7,Java,0.000e+00,0.000e+00,exact,1
+identity*M,7,Python,0.000e+00,0.000e+00,exact,1
+M*identity,7,C,0.000e+00,0.000e+00,exact,1
+M*identity,7,Java,0.000e+00,0.000e+00,exact,1
+M*identity,7,Python,0.000e+00,0.000e+00,exact,1
+zero*M,7,C,0.000e+00,0.000e+00,exact,1
+zero*M,7,Java,0.000e+00,0.000e+00,exact,1
+zero*M,7,Python,0.000e+00,0.000e+00,exact,1
+M*zero,7,C,0.000e+00,0.000e+00,exact,1
+M*zero,7,Java,0.000e+00,0.000e+00,exact,1
+M*zero,7,Python,0.000e+00,0.000e+00,exact,1
+2x2 by hand,2,C,0.000e+00,0.000e+00,exact,1
+2x2 by hand,2,Java,0.000e+00,0.000e+00,exact,1
+2x2 by hand,2,Python,0.000e+00,0.000e+00,exact,1
+3x3 by hand,3,C,0.000e+00,0.000e+00,exact,1
+3x3 by hand,3,Java,0.000e+00,0.000e+00,exact,1
+3x3 by hand,3,Python,0.000e+00,0.000e+00,exact,1
+1x1,1,C,0.000e+00,0.000e+00,exact,1
+1x1,1,Java,0.000e+00,0.000e+00,exact,1
+1x1,1,Python,0.000e+00,0.000e+00,exact,1
+random vs NumPy,2,C,0.000e+00,0.000e+00,4.441e-16,1
+random vs NumPy,2,Java,0.000e+00,0.000e+00,4.441e-16,1
+random vs NumPy,2,Python,0.000e+00,0.000e+00,4.441e-16,1
+bitwise C==Java==Python,2,all,0.000e+00,0.000e+00,exact,1
+random vs NumPy,3,C,1.110e-16,1.977e-16,6.661e-16,1
+random vs NumPy,3,Java,1.110e-16,1.977e-16,6.661e-16,1
+random vs NumPy,3,Python,1.110e-16,1.977e-16,6.661e-16,1
+bitwise C==Java==Python,3,all,0.000e+00,0.000e+00,exact,1
+random vs NumPy,5,C,4.441e-16,2.006e-16,1.110e-15,1
+random vs NumPy,5,Java,4.441e-16,2.006e-16,1.110e-15,1
+random vs NumPy,5,Python,4.441e-16,2.006e-16,1.110e-15,1
+bitwise C==Java==Python,5,all,0.000e+00,0.000e+00,exact,1
+random vs NumPy,16,C,1.776e-15,3.719e-16,3.553e-15,1
+random vs NumPy,16,Java,1.776e-15,3.719e-16,3.553e-15,1
+random vs NumPy,16,Python,1.776e-15,3.719e-16,3.553e-15,1
+bitwise C==Java==Python,16,all,0.000e+00,0.000e+00,exact,1
+random vs NumPy,33,C,3.553e-15,4.019e-16,7.327e-15,1
+random vs NumPy,33,Java,3.553e-15,4.019e-16,7.327e-15,1
+random vs NumPy,33,Python,3.553e-15,4.019e-16,7.327e-15,1
+bitwise C==Java==Python,33,all,0.000e+00,0.000e+00,exact,1
+random vs NumPy,64,C,7.105e-15,4.253e-16,1.421e-14,1
+random vs NumPy,64,Java,7.105e-15,4.253e-16,1.421e-14,1
+random vs NumPy,64,Python,7.105e-15,4.253e-16,1.421e-14,1
+bitwise C==Java==Python,64,all,0.000e+00,0.000e+00,exact,1
+random vs NumPy,100,C,2.132e-14,8.034e-16,2.220e-14,1
+random vs NumPy,100,Java,2.132e-14,8.034e-16,2.220e-14,1
+random vs NumPy,100,Python,2.132e-14,8.034e-16,2.220e-14,1
+bitwise C==Java==Python,100,all,0.000e+00,0.000e+00,exact,1
+random vs NumPy,128,C,1.421e-14,4.583e-16,2.842e-14,1
+random vs NumPy,128,Java,1.421e-14,4.583e-16,2.842e-14,1
+random vs NumPy,128,Python,1.421e-14,4.583e-16,2.842e-14,1
+bitwise C==Java==Python,128,all,0.000e+00,0.000e+00,exact,1

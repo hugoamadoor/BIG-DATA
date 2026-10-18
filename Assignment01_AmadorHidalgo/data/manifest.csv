@@ -1,0 +1,27 @@
+n,matrix,file,bytes,sha256,generator,seed
+1,A,A_1.bin,8,25a78c87684c34c6bebae2290240bc6822d7d695f4baee6fc89f845096a3b69b,numpy.random.default_rng (PCG64) .random(),20261013
+1,B,B_1.bin,8,02c2708335f93f7f688edd2657081ff35598b42a639c5157dee1cdb3a0fac37c,numpy.random.default_rng (PCG64) .random(),20261014
+16,A,A_16.bin,2048,798d68dd0e1d09dea1fddd392ab8ee99bdf349fb36d73b0d1bad76120858dcee,numpy.random.default_rng (PCG64) .random(),20261028
+16,B,B_16.bin,2048,efe0799e8fcb159d1173e5cb604334af9104d5f338eb583fd19b78a673a2cb06,numpy.random.default_rng (PCG64) .random(),20261029
+32,A,A_32.bin,8192,bc0435d8a03df58d99db18fcd6a3deaab8b9193472efa6b50487af38ac9432b9,numpy.random.default_rng (PCG64) .random(),20261044
+32,B,B_32.bin,8192,5c833c89b58d6cf9d05443114e788d2bd06aebbba41b18e6f33cf5d97c562f4b,numpy.random.default_rng (PCG64) .random(),20261045
+64,A,A_64.bin,32768,faf92fab42b75318981cf4d3681785d040bc55a16f50b4e625b8463ce38071c3,numpy.random.default_rng (PCG64) .random(),20261076
+64,B,B_64.bin,32768,9abc76651c67c61b78192bb6178e6aefa93823da306847297fb144e25508f61f,numpy.random.default_rng (PCG64) .random(),20261077
+128,A,A_128.bin,131072,b4409c051cdfb82a3f30c3f42df8899fa7a76016497a575bf2d1a6f54da01ede,numpy.random.default_rng (PCG64) .random(),20261140
+128,B,B_128.bin,131072,8818abf5dbae95f5b8ea624ff0f5773b7f110202071bea133dfb6e8d097cd69d,numpy.random.default_rng (PCG64) .random(),20261141
+256,A,A_256.bin,524288,3c9c39073b531205072e04cd248d2d932ec956bab5488d55a1868d36dfd9d3d7,numpy.random.default_rng (PCG64) .random(),20261268
+256,B,B_256.bin,524288,ceb73da791405d93fdc9a752b4134467fc07f28bb115fa70e4b76ad52e5afa73,numpy.random.default_rng (PCG64) .random(),20261269
+512,A,A_512.bin,2097152,96faae82afb203a8aa23f36442e73c68e2196b72cdd45f90469c22ae2c4a738b,numpy.random.default_rng (PCG64) .random(),20261524
+512,B,B_512.bin,2097152,f9b8ea350c30d497d44b7a7a3469659df0c8f900b93b43985cdd61b349b4a591,numpy.random.default_rng (PCG64) .random(),20261525
+768,A,A_768.bin,4718592,d8aad8a5bacf1061e0363fdc730627e260c0e08aa1d08c0852e9f58fbd8d4607,numpy.random.default_rng (PCG64) .random(),20261780
+768,B,B_768.bin,4718592,899e56e5de87d163e040720787f297f4fd85d00f499febdbc6de0f572b85b2ff,numpy.random.default_rng (PCG64) .random(),20261781
+1000,A,A_1000.bin,8000000,8cef0e1b2a38f9c4974838d53b419f2fe2acefe8454ccb781ab0a3a4ed2be762,numpy.random.default_rng (PCG64) .random(),20262012
+1000,B,B_1000.bin,8000000,902adfd3fffdb32eff63e6dff1ecb073bbb431597f656051ed827cb3fb8f89f5,numpy.random.default_rng (PCG64) .random(),20262013
+1024,A,A_1024.bin,8388608,ddaf99f5da41c42ac1217e997f7c23a01295259d8d56d50f67ff8f3de2bf57a6,numpy.random.default_rng (PCG64) .random(),20262036
+1024,B,B_1024.bin,8388608,5eb350956d5938b61c5233bb2d5948bf011636fa046e9027a160fd64cd3d7414,numpy.random.default_rng (PCG64) .random(),20262037
+1025,A,A_1025.bin,8405000,554cb79eb1ff1463f05350583e4058cffbac81869b31f6070a38fae04837ff12,numpy.random.default_rng (PCG64) .random(),20262037
+1025,B,B_1025.bin,8405000,57c35d9e962f4e0b4cbac7ffe0e05ba00c9be78f64c56d5071185c7d17f59e96,numpy.random.default_rng (PCG64) .random(),20262038
+1536,A,A_1536.bin,18874368,7b77ac8f6e98d6ad55a7eadf941784b71183c95b403dedf0f1c86225f6b444ec,numpy.random.default_rng (PCG64) .random(),20262548
+1536,B,B_1536.bin,18874368,195a60ae571b4f56e8f5313bb865eac8901f92a88c5ed3cfbce1302bc35c3273,numpy.random.default_rng (PCG64) .random(),20262549
+2048,A,A_2048.bin,33554432,1bc525c713910518b81adee81d05c068c3ad07a5ec633636447dfb3de990abe7,numpy.random.default_rng (PCG64) .random(),20263060
+2048,B,B_2048.bin,33554432,369394b4bf782a65249a167b494aa933f31c796ab0d906665728297d72daf6d7,numpy.random.default_rng (PCG64) .random(),20263061

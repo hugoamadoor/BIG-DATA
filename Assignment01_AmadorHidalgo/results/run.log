@@ -1,0 +1,46 @@
+== runtime baselines (n=1)
+  C-O2    baseline peak RSS median 1.6 MB
+  Java    baseline peak RSS median 42.4 MB
+  Python  baseline peak RSS median 9.8 MB
+== main study
+  C-O2    n=   16 ok         samples=10 median=   0.00000 s rss=    1.8 MB wall=   2.3 s 
+  Java    n=   16 ok         samples=10 median=   0.00000 s rss=   45.3 MB wall=   2.4 s 
+  Python  n=   16 ok         samples=10 median=   0.00021 s rss=    9.9 MB wall=   1.8 s 
+  C-O2    n=   32 ok         samples=10 median=   0.00002 s rss=    1.6 MB wall=   1.9 s 
+  Java    n=   32 ok         samples=10 median=   0.00003 s rss=   43.2 MB wall=   2.5 s 
+  Python  n=   32 ok         samples=10 median=   0.00144 s rss=   10.0 MB wall=   2.0 s 
+  C-O2    n=   64 ok         samples=10 median=   0.00022 s rss=    1.8 MB wall=   1.9 s 
+  Java    n=   64 ok         samples=10 median=   0.00025 s rss=   42.5 MB wall=   2.3 s 
+  Python  n=   64 ok         samples=10 median=   0.01352 s rss=   10.1 MB wall=   2.3 s 
+  C-O2    n=  128 ok         samples=10 median=   0.00190 s rss=    2.0 MB wall=   2.1 s 
+  Java    n=  128 ok         samples=10 median=   0.00291 s rss=   43.2 MB wall=   2.2 s 
+  Python  n=  128 ok         samples=10 median=   0.11246 s rss=   11.7 MB wall=   2.4 s 
+  C-O2    n=  256 ok         samples=10 median=   0.01976 s rss=    3.1 MB wall=   2.1 s 
+  Java    n=  256 ok         samples=10 median=   0.02309 s rss=   45.0 MB wall=   2.4 s 
+  Python  n=  256 ok         samples=10 median=   1.21614 s rss=   17.1 MB wall=  14.1 s 
+  C-O2    n=  512 ok         samples= 5 median=   0.33127 s rss=    7.6 MB wall=   2.7 s 
+  Java    n=  512 ok         samples= 5 median=   0.25760 s rss=   49.7 MB wall=   2.5 s 
+  Python  n=  512 ok         samples= 5 median=  12.51987 s rss=   39.9 MB wall=  76.6 s 
+  C-O2    n=  768 ok         samples= 5 median=   1.01536 s rss=   15.1 MB wall=   6.2 s 
+  Java    n=  768 ok         samples= 5 median=   0.93415 s rss=   57.9 MB wall=   6.2 s 
+  Python  n=  768 ok         samples= 5 median=  45.95478 s rss=   77.5 MB wall= 272.3 s 
+  C-O2    n= 1024 ok         samples= 5 median=   4.54852 s rss=   25.5 MB wall=  27.9 s 
+  Java    n= 1024 ok         samples= 5 median=   4.89139 s rss=   91.0 MB wall=  32.2 s 
+  Python  n= 1024 ok         samples= 3 median= 117.20710 s rss=  130.3 MB wall= 469.3 s 
+  C-O2    n= 1536 ok         samples= 5 median=  18.62761 s rss=   55.5 MB wall= 113.2 s 
+  Java    n= 1536 ok         samples= 5 median=  37.22822 s rss=  119.2 MB wall= 223.9 s 
+  Python  n= 1536 timeout    samples= 0 median=       nan s rss=    nan MB wall= 900.0 s killed after 900 s
+  C-O2    n= 2048 ok         samples= 5 median=  50.07232 s rss=   97.5 MB wall= 310.8 s 
+  Java    n= 2048 ok         samples= 3 median= 105.63689 s rss=  145.6 MB wall= 427.7 s 
+  Python  n= 2048 not attempted
+== supplementary S1: C optimisation levels (separate from the main comparison)
+  C-O0    n=  256 ok         samples=10 median=   0.04899 s rss=    3.1 MB wall=   2.1 s 
+  C-O2    n=  256 ok         samples=10 median=   0.01986 s rss=    3.0 MB wall=   2.3 s 
+  C-O3    n=  256 ok         samples=10 median=   0.01916 s rss=    3.1 MB wall=   2.0 s 
+  C-O0    n=  512 ok         samples= 5 median=   0.72216 s rss=    7.5 MB wall=   5.1 s 
+  C-O2    n=  512 ok         samples= 5 median=   0.39679 s rss=    7.5 MB wall=   3.2 s 
+  C-O3    n=  512 ok         samples= 5 median=   0.33036 s rss=    7.6 MB wall=   2.9 s 
+  C-O0    n= 1024 ok         samples= 5 median=   9.67660 s rss=   25.6 MB wall=  58.4 s 
+  C-O2    n= 1024 ok         samples= 5 median=   3.80232 s rss=   25.6 MB wall=  22.9 s 
+  C-O3    n= 1024 ok         samples= 5 median=   4.48962 s rss=   25.6 MB wall=  26.6 s 
+cross-language checksum comparison: ALL IDENTICAL

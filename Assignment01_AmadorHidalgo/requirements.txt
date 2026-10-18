@@ -1,0 +1,6 @@
+# Only used for input generation, validation, analysis and the PDF report.
+# The three multiplication kernels themselves use no third-party library.
+numpy==2.5.3
+pandas==3.0.5
+matplotlib==3.11.2
+reportlab==5.0.1
