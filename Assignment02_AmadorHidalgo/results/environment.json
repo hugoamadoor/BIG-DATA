@@ -1,0 +1,38 @@
+{
+  "os": "Linux-6.18.44-fc-v230-x86_64-with-glibc2.39",
+  "kernel": "6.18.44-fc-v230",
+  "machine": "x86_64",
+  "logical_processors": 2,
+  "cpu_model": "Intel(R) Xeon(R) Processor @ 2.10GHz",
+  "physical_cores": 2,
+  "threads_per_core": "1",
+  "l1d_cache": "96 KiB (2 instances)",
+  "l2_cache": "4 MiB (2 instances)",
+  "l3_cache": "260 MiB (1 instance)",
+  "hypervisor": "KVM",
+  "ram": "MemTotal:        8220244 kB",
+  "cpu_governor": "n/a (not exposed)",
+  "python": "3.13.16 (main, Oct  1 2026, 15:40:24) [GCC 13.3.0]",
+  "python_implementation": "CPython",
+  "numpy_used_only_for_input_generation_and_validation": "2.5.3",
+  "gcc": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+  "c_flags": "-O2 -std=c11 -ffp-contract=off",
+  "threads_note": "Every benchmarked kernel is sequential (one thread, no OpenMP, no BLAS). NumPy/SciPy are used only by the harness for input generation and validation, never while a benchmark process is running.",
+  "memory_metric": "peak resident set size (ru_maxrss) of the benchmark process, from wait4()",
+  "timer": "clock_gettime(CLOCK_MONOTONIC) inside the C process",
+  "scipy_used_only_for_validation": "1.18.1",
+  "load_average_at_start": [
+    0.61376953125,
+    0.884765625,
+    0.96240234375
+  ],
+  "build_flags": "-O2 -std=c11 -ffp-contract=off (gcc), no -march: x86-64 baseline ISA",
+  "protocol": {
+    "limit_s": 180.0,
+    "wall_limit_s": 900.0,
+    "mem_budget_bytes": 4294967296,
+    "budget_s": 300.0,
+    "min_reps": 3,
+    "batch_s": 0.1
+  }
+}

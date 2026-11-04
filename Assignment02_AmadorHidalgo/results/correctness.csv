@@ -1,0 +1,206 @@
+test,passed,detail
+dense ijk block=64: hand 3x3,True,
+dense ijk_bt block=64: hand 3x3,True,
+dense ikj block=64: hand 3x3,True,
+dense blocked block=1: hand 3x3,True,
+dense blocked block=7: hand 3x3,True,
+dense blocked block=64: hand 3x3,True,
+dense blocked block=256: hand 3x3,True,
+dense ijk block=64: identity * R (n=1),True,
+dense ijk_bt block=64: identity * R (n=1),True,
+dense ikj block=64: identity * R (n=1),True,
+dense blocked block=1: identity * R (n=1),True,
+dense blocked block=7: identity * R (n=1),True,
+dense blocked block=64: identity * R (n=1),True,
+dense blocked block=256: identity * R (n=1),True,
+dense ijk block=64: R * identity (n=1),True,
+dense ijk_bt block=64: R * identity (n=1),True,
+dense ikj block=64: R * identity (n=1),True,
+dense blocked block=1: R * identity (n=1),True,
+dense blocked block=7: R * identity (n=1),True,
+dense blocked block=64: R * identity (n=1),True,
+dense blocked block=256: R * identity (n=1),True,
+dense ijk block=64: zero * R (n=1),True,
+dense ijk_bt block=64: zero * R (n=1),True,
+dense ikj block=64: zero * R (n=1),True,
+dense blocked block=1: zero * R (n=1),True,
+dense blocked block=7: zero * R (n=1),True,
+dense blocked block=64: zero * R (n=1),True,
+dense blocked block=256: zero * R (n=1),True,
+dense ijk block=64: identity * R (n=5),True,
+dense ijk_bt block=64: identity * R (n=5),True,
+dense ikj block=64: identity * R (n=5),True,
+dense blocked block=1: identity * R (n=5),True,
+dense blocked block=7: identity * R (n=5),True,
+dense blocked block=64: identity * R (n=5),True,
+dense blocked block=256: identity * R (n=5),True,
+dense ijk block=64: R * identity (n=5),True,
+dense ijk_bt block=64: R * identity (n=5),True,
+dense ikj block=64: R * identity (n=5),True,
+dense blocked block=1: R * identity (n=5),True,
+dense blocked block=7: R * identity (n=5),True,
+dense blocked block=64: R * identity (n=5),True,
+dense blocked block=256: R * identity (n=5),True,
+dense ijk block=64: zero * R (n=5),True,
+dense ijk_bt block=64: zero * R (n=5),True,
+dense ikj block=64: zero * R (n=5),True,
+dense blocked block=1: zero * R (n=5),True,
+dense blocked block=7: zero * R (n=5),True,
+dense blocked block=64: zero * R (n=5),True,
+dense blocked block=256: zero * R (n=5),True,
+dense ijk block=64: identity * R (n=70),True,
+dense ijk_bt block=64: identity * R (n=70),True,
+dense ikj block=64: identity * R (n=70),True,
+dense blocked block=1: identity * R (n=70),True,
+dense blocked block=7: identity * R (n=70),True,
+dense blocked block=64: identity * R (n=70),True,
+dense blocked block=256: identity * R (n=70),True,
+dense ijk block=64: R * identity (n=70),True,
+dense ijk_bt block=64: R * identity (n=70),True,
+dense ikj block=64: R * identity (n=70),True,
+dense blocked block=1: R * identity (n=70),True,
+dense blocked block=7: R * identity (n=70),True,
+dense blocked block=64: R * identity (n=70),True,
+dense blocked block=256: R * identity (n=70),True,
+dense ijk block=64: zero * R (n=70),True,
+dense ijk_bt block=64: zero * R (n=70),True,
+dense ikj block=64: zero * R (n=70),True,
+dense blocked block=1: zero * R (n=70),True,
+dense blocked block=7: zero * R (n=70),True,
+dense blocked block=64: zero * R (n=70),True,
+dense blocked block=256: zero * R (n=70),True,
+dense ijk block=64: small integers 6x6 (exact),True,
+dense ijk_bt block=64: small integers 6x6 (exact),True,
+dense ikj block=64: small integers 6x6 (exact),True,
+dense blocked block=1: small integers 6x6 (exact),True,
+dense blocked block=7: small integers 6x6 (exact),True,
+dense blocked block=64: small integers 6x6 (exact),True,
+dense blocked block=256: small integers 6x6 (exact),True,
+dense ijk n=16: within 2*gamma_n*|A||B| of NumPy,True,max abs err 1.776e-15
+dense ijk_bt block=64 n=16: within bound of NumPy,True,max abs err 1.776e-15
+dense ijk_bt block=64 n=16: bit-identical to baseline,True,
+dense ikj block=64 n=16: within bound of NumPy,True,max abs err 1.776e-15
+dense ikj block=64 n=16: bit-identical to baseline,True,
+dense blocked block=1 n=16: within bound of NumPy,True,max abs err 1.776e-15
+dense blocked block=1 n=16: bit-identical to baseline,True,
+dense blocked block=7 n=16: within bound of NumPy,True,max abs err 1.776e-15
+dense blocked block=7 n=16: bit-identical to baseline,True,
+dense blocked block=64 n=16: within bound of NumPy,True,max abs err 1.776e-15
+dense blocked block=64 n=16: bit-identical to baseline,True,
+dense blocked block=256 n=16: within bound of NumPy,True,max abs err 1.776e-15
+dense blocked block=256 n=16: bit-identical to baseline,True,
+dense ijk n=64: within 2*gamma_n*|A||B| of NumPy,True,max abs err 7.105e-15
+dense ijk_bt block=64 n=64: within bound of NumPy,True,max abs err 7.105e-15
+dense ijk_bt block=64 n=64: bit-identical to baseline,True,
+dense ikj block=64 n=64: within bound of NumPy,True,max abs err 7.105e-15
+dense ikj block=64 n=64: bit-identical to baseline,True,
+dense blocked block=1 n=64: within bound of NumPy,True,max abs err 7.105e-15
+dense blocked block=1 n=64: bit-identical to baseline,True,
+dense blocked block=7 n=64: within bound of NumPy,True,max abs err 7.105e-15
+dense blocked block=7 n=64: bit-identical to baseline,True,
+dense blocked block=64 n=64: within bound of NumPy,True,max abs err 7.105e-15
+dense blocked block=64 n=64: bit-identical to baseline,True,
+dense blocked block=256 n=64: within bound of NumPy,True,max abs err 7.105e-15
+dense blocked block=256 n=64: bit-identical to baseline,True,
+dense ijk n=100: within 2*gamma_n*|A||B| of NumPy,True,max abs err 2.132e-14
+dense ijk_bt block=64 n=100: within bound of NumPy,True,max abs err 2.132e-14
+dense ijk_bt block=64 n=100: bit-identical to baseline,True,
+dense ikj block=64 n=100: within bound of NumPy,True,max abs err 2.132e-14
+dense ikj block=64 n=100: bit-identical to baseline,True,
+dense blocked block=1 n=100: within bound of NumPy,True,max abs err 2.132e-14
+dense blocked block=1 n=100: bit-identical to baseline,True,
+dense blocked block=7 n=100: within bound of NumPy,True,max abs err 2.132e-14
+dense blocked block=7 n=100: bit-identical to baseline,True,
+dense blocked block=64 n=100: within bound of NumPy,True,max abs err 2.132e-14
+dense blocked block=64 n=100: bit-identical to baseline,True,
+dense blocked block=256 n=100: within bound of NumPy,True,max abs err 2.132e-14
+dense blocked block=256 n=100: bit-identical to baseline,True,
+dense ijk n=200: within 2*gamma_n*|A||B| of NumPy,True,max abs err 2.842e-14
+dense ijk_bt block=64 n=200: within bound of NumPy,True,max abs err 2.842e-14
+dense ijk_bt block=64 n=200: bit-identical to baseline,True,
+dense ikj block=64 n=200: within bound of NumPy,True,max abs err 2.842e-14
+dense ikj block=64 n=200: bit-identical to baseline,True,
+dense blocked block=1 n=200: within bound of NumPy,True,max abs err 2.842e-14
+dense blocked block=1 n=200: bit-identical to baseline,True,
+dense blocked block=7 n=200: within bound of NumPy,True,max abs err 2.842e-14
+dense blocked block=7 n=200: bit-identical to baseline,True,
+dense blocked block=64 n=200: within bound of NumPy,True,max abs err 2.842e-14
+dense blocked block=64 n=200: bit-identical to baseline,True,
+dense blocked block=256 n=200: within bound of NumPy,True,max abs err 2.842e-14
+dense blocked block=256 n=200: bit-identical to baseline,True,
+sparse csr: identity * R,True,
+sparse csr: R * identity,True,
+sparse csr: zero * R,True,
+sparse csr: R with empty rows * R,True,
+sparse csr-input uniform_n64_d30: within bound of NumPy,True,max abs err 8.882e-16
+sparse csr-input uniform_n64_d30: bit-identical to dense baseline,True,
+sparse csr-input uniform_n64_d30: nnz(C) = SciPy nnz (4085),True,got 4085
+sparse dense-input uniform_n64_d30: within bound of NumPy,True,max abs err 8.882e-16
+sparse dense-input uniform_n64_d30: bit-identical to dense baseline,True,
+sparse dense-input uniform_n64_d30: nnz(C) = SciPy nnz (4085),True,got 4085
+sparse csr-input uniform_n64_d5: within bound of NumPy,True,max abs err 1.110e-16
+sparse csr-input uniform_n64_d5: bit-identical to dense baseline,True,
+sparse csr-input uniform_n64_d5: nnz(C) = SciPy nnz (607),True,got 607
+sparse dense-input uniform_n64_d5: within bound of NumPy,True,max abs err 1.110e-16
+sparse dense-input uniform_n64_d5: bit-identical to dense baseline,True,
+sparse dense-input uniform_n64_d5: nnz(C) = SciPy nnz (607),True,got 607
+sparse csr-input uniform_n200_d30: within bound of NumPy,True,max abs err 3.553e-15
+sparse csr-input uniform_n200_d30: bit-identical to dense baseline,True,
+sparse csr-input uniform_n200_d30: nnz(C) = SciPy nnz (40000),True,got 40000
+sparse dense-input uniform_n200_d30: within bound of NumPy,True,max abs err 3.553e-15
+sparse dense-input uniform_n200_d30: bit-identical to dense baseline,True,
+sparse dense-input uniform_n200_d30: nnz(C) = SciPy nnz (40000),True,got 40000
+sparse csr-input uniform_n200_d5: within bound of NumPy,True,max abs err 4.441e-16
+sparse csr-input uniform_n200_d5: bit-identical to dense baseline,True,
+sparse csr-input uniform_n200_d5: nnz(C) = SciPy nnz (15511),True,got 15511
+sparse dense-input uniform_n200_d5: within bound of NumPy,True,max abs err 4.441e-16
+sparse dense-input uniform_n200_d5: bit-identical to dense baseline,True,
+sparse dense-input uniform_n200_d5: nnz(C) = SciPy nnz (15511),True,got 15511
+sparse csr-input banded_n64_d30: within bound of NumPy,True,max abs err 1.776e-15
+sparse csr-input banded_n64_d30: bit-identical to dense baseline,True,
+sparse csr-input banded_n64_d30: nnz(C) = SciPy nnz (2204),True,got 2204
+sparse dense-input banded_n64_d30: within bound of NumPy,True,max abs err 1.776e-15
+sparse dense-input banded_n64_d30: bit-identical to dense baseline,True,
+sparse dense-input banded_n64_d30: nnz(C) = SciPy nnz (2204),True,got 2204
+sparse csr-input banded_n64_d5: within bound of NumPy,True,max abs err 2.220e-16
+sparse csr-input banded_n64_d5: bit-identical to dense baseline,True,
+sparse csr-input banded_n64_d5: nnz(C) = SciPy nnz (314),True,got 314
+sparse dense-input banded_n64_d5: within bound of NumPy,True,max abs err 2.220e-16
+sparse dense-input banded_n64_d5: bit-identical to dense baseline,True,
+sparse dense-input banded_n64_d5: nnz(C) = SciPy nnz (314),True,got 314
+sparse csr-input banded_n200_d30: within bound of NumPy,True,max abs err 7.105e-15
+sparse csr-input banded_n200_d30: bit-identical to dense baseline,True,
+sparse csr-input banded_n200_d30: nnz(C) = SciPy nnz (21640),True,got 21640
+sparse dense-input banded_n200_d30: within bound of NumPy,True,max abs err 7.105e-15
+sparse dense-input banded_n200_d30: bit-identical to dense baseline,True,
+sparse dense-input banded_n200_d30: nnz(C) = SciPy nnz (21640),True,got 21640
+sparse csr-input banded_n200_d5: within bound of NumPy,True,max abs err 1.332e-15
+sparse csr-input banded_n200_d5: bit-identical to dense baseline,True,
+sparse csr-input banded_n200_d5: nnz(C) = SciPy nnz (4090),True,got 4090
+sparse dense-input banded_n200_d5: within bound of NumPy,True,max abs err 1.332e-15
+sparse dense-input banded_n200_d5: bit-identical to dense baseline,True,
+sparse dense-input banded_n200_d5: nnz(C) = SciPy nnz (4090),True,got 4090
+sparse csr-input skewed_n64_d30: within bound of NumPy,True,max abs err 1.776e-15
+sparse csr-input skewed_n64_d30: bit-identical to dense baseline,True,
+sparse csr-input skewed_n64_d30: nnz(C) = SciPy nnz (3951),True,got 3951
+sparse dense-input skewed_n64_d30: within bound of NumPy,True,max abs err 1.776e-15
+sparse dense-input skewed_n64_d30: bit-identical to dense baseline,True,
+sparse dense-input skewed_n64_d30: nnz(C) = SciPy nnz (3951),True,got 3951
+sparse csr-input skewed_n64_d5: within bound of NumPy,True,max abs err 4.441e-16
+sparse csr-input skewed_n64_d5: bit-identical to dense baseline,True,
+sparse csr-input skewed_n64_d5: nnz(C) = SciPy nnz (527),True,got 527
+sparse dense-input skewed_n64_d5: within bound of NumPy,True,max abs err 4.441e-16
+sparse dense-input skewed_n64_d5: bit-identical to dense baseline,True,
+sparse dense-input skewed_n64_d5: nnz(C) = SciPy nnz (527),True,got 527
+sparse csr-input skewed_n200_d30: within bound of NumPy,True,max abs err 7.105e-15
+sparse csr-input skewed_n200_d30: bit-identical to dense baseline,True,
+sparse csr-input skewed_n200_d30: nnz(C) = SciPy nnz (39987),True,got 39987
+sparse dense-input skewed_n200_d30: within bound of NumPy,True,max abs err 7.105e-15
+sparse dense-input skewed_n200_d30: bit-identical to dense baseline,True,
+sparse dense-input skewed_n200_d30: nnz(C) = SciPy nnz (39987),True,got 39987
+sparse csr-input skewed_n200_d5: within bound of NumPy,True,max abs err 1.332e-15
+sparse csr-input skewed_n200_d5: bit-identical to dense baseline,True,
+sparse csr-input skewed_n200_d5: nnz(C) = SciPy nnz (10260),True,got 10260
+sparse dense-input skewed_n200_d5: within bound of NumPy,True,max abs err 1.332e-15
+sparse dense-input skewed_n200_d5: bit-identical to dense baseline,True,
+sparse dense-input skewed_n200_d5: nnz(C) = SciPy nnz (10260),True,got 10260

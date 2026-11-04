@@ -1,0 +1,5 @@
+method,n,status,samples,median_s,iqr_pct
+a1_matmul_O2,512,ok,10,0.430811,9.03266
+ijk,512,ok,10,0.3569,9.25507
+a1_matmul_O2,1024,ok,5,7.64802,3.25197
+ijk,1024,ok,5,7.58154,5.28074
