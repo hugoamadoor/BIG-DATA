@@ -1,0 +1,7 @@
+build/
+__pycache__/
+*.pyc
+.venv/
+.DS_Store
+# generated inputs (~800 MB); regenerate with scripts/gen_inputs.py, hashes in data/manifest.csv
+data/*.bin

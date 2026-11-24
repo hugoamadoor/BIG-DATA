@@ -1,0 +1,422 @@
+test,passed,detail
+mm seq p=1: hand 3x3,True,
+mm tiles p=1: hand 3x3,True,
+mm omp p=1: hand 3x3,True,
+mm omp p=2: hand 3x3,True,
+mm omp p=3: hand 3x3,True,
+mm omp p=4: hand 3x3,True,
+mm omp p=8: hand 3x3,True,
+mm_nomp seq p=1: hand 3x3,True,
+mm_nomp tiles p=1: hand 3x3,True,
+mm_scalar seq p=1: hand 3x3,True,
+mm_scalar tiles p=1: hand 3x3,True,
+mm_scalar omp p=1: hand 3x3,True,
+mm_scalar omp p=2: hand 3x3,True,
+mm_scalar omp p=3: hand 3x3,True,
+mm_scalar omp p=4: hand 3x3,True,
+mm_scalar omp p=8: hand 3x3,True,
+mm_simd seq p=1: hand 3x3,True,
+mm_simd tiles p=1: hand 3x3,True,
+mm_simd omp p=1: hand 3x3,True,
+mm_simd omp p=2: hand 3x3,True,
+mm_simd omp p=3: hand 3x3,True,
+mm_simd omp p=4: hand 3x3,True,
+mm_simd omp p=8: hand 3x3,True,
+mm seq p=1: identity * R (n=70),True,
+mm tiles p=1: identity * R (n=70),True,
+mm omp p=1: identity * R (n=70),True,
+mm omp p=2: identity * R (n=70),True,
+mm omp p=3: identity * R (n=70),True,
+mm omp p=4: identity * R (n=70),True,
+mm omp p=8: identity * R (n=70),True,
+mm_nomp seq p=1: identity * R (n=70),True,
+mm_nomp tiles p=1: identity * R (n=70),True,
+mm_scalar seq p=1: identity * R (n=70),True,
+mm_scalar tiles p=1: identity * R (n=70),True,
+mm_scalar omp p=1: identity * R (n=70),True,
+mm_scalar omp p=2: identity * R (n=70),True,
+mm_scalar omp p=3: identity * R (n=70),True,
+mm_scalar omp p=4: identity * R (n=70),True,
+mm_scalar omp p=8: identity * R (n=70),True,
+mm_simd seq p=1: identity * R (n=70),True,
+mm_simd tiles p=1: identity * R (n=70),True,
+mm_simd omp p=1: identity * R (n=70),True,
+mm_simd omp p=2: identity * R (n=70),True,
+mm_simd omp p=3: identity * R (n=70),True,
+mm_simd omp p=4: identity * R (n=70),True,
+mm_simd omp p=8: identity * R (n=70),True,
+mm seq p=1: R * identity (n=70),True,
+mm tiles p=1: R * identity (n=70),True,
+mm omp p=1: R * identity (n=70),True,
+mm omp p=2: R * identity (n=70),True,
+mm omp p=3: R * identity (n=70),True,
+mm omp p=4: R * identity (n=70),True,
+mm omp p=8: R * identity (n=70),True,
+mm_nomp seq p=1: R * identity (n=70),True,
+mm_nomp tiles p=1: R * identity (n=70),True,
+mm_scalar seq p=1: R * identity (n=70),True,
+mm_scalar tiles p=1: R * identity (n=70),True,
+mm_scalar omp p=1: R * identity (n=70),True,
+mm_scalar omp p=2: R * identity (n=70),True,
+mm_scalar omp p=3: R * identity (n=70),True,
+mm_scalar omp p=4: R * identity (n=70),True,
+mm_scalar omp p=8: R * identity (n=70),True,
+mm_simd seq p=1: R * identity (n=70),True,
+mm_simd tiles p=1: R * identity (n=70),True,
+mm_simd omp p=1: R * identity (n=70),True,
+mm_simd omp p=2: R * identity (n=70),True,
+mm_simd omp p=3: R * identity (n=70),True,
+mm_simd omp p=4: R * identity (n=70),True,
+mm_simd omp p=8: R * identity (n=70),True,
+mm seq p=1: zero * R (n=70),True,
+mm tiles p=1: zero * R (n=70),True,
+mm omp p=1: zero * R (n=70),True,
+mm omp p=2: zero * R (n=70),True,
+mm omp p=3: zero * R (n=70),True,
+mm omp p=4: zero * R (n=70),True,
+mm omp p=8: zero * R (n=70),True,
+mm_nomp seq p=1: zero * R (n=70),True,
+mm_nomp tiles p=1: zero * R (n=70),True,
+mm_scalar seq p=1: zero * R (n=70),True,
+mm_scalar tiles p=1: zero * R (n=70),True,
+mm_scalar omp p=1: zero * R (n=70),True,
+mm_scalar omp p=2: zero * R (n=70),True,
+mm_scalar omp p=3: zero * R (n=70),True,
+mm_scalar omp p=4: zero * R (n=70),True,
+mm_scalar omp p=8: zero * R (n=70),True,
+mm_simd seq p=1: zero * R (n=70),True,
+mm_simd tiles p=1: zero * R (n=70),True,
+mm_simd omp p=1: zero * R (n=70),True,
+mm_simd omp p=2: zero * R (n=70),True,
+mm_simd omp p=3: zero * R (n=70),True,
+mm_simd omp p=4: zero * R (n=70),True,
+mm_simd omp p=8: zero * R (n=70),True,
+mm seq p=1: small integers 6x6 (exact),True,
+mm tiles p=1: small integers 6x6 (exact),True,
+mm omp p=1: small integers 6x6 (exact),True,
+mm omp p=2: small integers 6x6 (exact),True,
+mm omp p=3: small integers 6x6 (exact),True,
+mm omp p=4: small integers 6x6 (exact),True,
+mm omp p=8: small integers 6x6 (exact),True,
+mm_nomp seq p=1: small integers 6x6 (exact),True,
+mm_nomp tiles p=1: small integers 6x6 (exact),True,
+mm_scalar seq p=1: small integers 6x6 (exact),True,
+mm_scalar tiles p=1: small integers 6x6 (exact),True,
+mm_scalar omp p=1: small integers 6x6 (exact),True,
+mm_scalar omp p=2: small integers 6x6 (exact),True,
+mm_scalar omp p=3: small integers 6x6 (exact),True,
+mm_scalar omp p=4: small integers 6x6 (exact),True,
+mm_scalar omp p=8: small integers 6x6 (exact),True,
+mm_simd seq p=1: small integers 6x6 (exact),True,
+mm_simd tiles p=1: small integers 6x6 (exact),True,
+mm_simd omp p=1: small integers 6x6 (exact),True,
+mm_simd omp p=2: small integers 6x6 (exact),True,
+mm_simd omp p=3: small integers 6x6 (exact),True,
+mm_simd omp p=4: small integers 6x6 (exact),True,
+mm_simd omp p=8: small integers 6x6 (exact),True,
+mm seq p=1 n=1: within 2*gamma_n*|A||B| of NumPy,True,max abs err 0.000e+00
+mm seq p=1 n=1: bit-identical to sequential baseline,True,
+mm tiles p=1 n=1: within 2*gamma_n*|A||B| of NumPy,True,max abs err 0.000e+00
+mm tiles p=1 n=1: bit-identical to sequential baseline,True,
+mm omp p=1 n=1: within 2*gamma_n*|A||B| of NumPy,True,max abs err 0.000e+00
+mm omp p=1 n=1: bit-identical to sequential baseline,True,
+mm omp p=1 n=1: reported threads = OMP_NUM_THREADS,True,reported 1
+mm omp p=2 n=1: within 2*gamma_n*|A||B| of NumPy,True,max abs err 0.000e+00
+mm omp p=2 n=1: bit-identical to sequential baseline,True,
+mm omp p=2 n=1: reported threads = OMP_NUM_THREADS,True,reported 2
+mm omp p=3 n=1: within 2*gamma_n*|A||B| of NumPy,True,max abs err 0.000e+00
+mm omp p=3 n=1: bit-identical to sequential baseline,True,
+mm omp p=3 n=1: reported threads = OMP_NUM_THREADS,True,reported 3
+mm omp p=4 n=1: within 2*gamma_n*|A||B| of NumPy,True,max abs err 0.000e+00
+mm omp p=4 n=1: bit-identical to sequential baseline,True,
+mm omp p=4 n=1: reported threads = OMP_NUM_THREADS,True,reported 4
+mm omp p=8 n=1: within 2*gamma_n*|A||B| of NumPy,True,max abs err 0.000e+00
+mm omp p=8 n=1: bit-identical to sequential baseline,True,
+mm omp p=8 n=1: reported threads = OMP_NUM_THREADS,True,reported 8
+mm_nomp seq p=1 n=1: within 2*gamma_n*|A||B| of NumPy,True,max abs err 0.000e+00
+mm_nomp seq p=1 n=1: bit-identical to sequential baseline,True,
+mm_nomp tiles p=1 n=1: within 2*gamma_n*|A||B| of NumPy,True,max abs err 0.000e+00
+mm_nomp tiles p=1 n=1: bit-identical to sequential baseline,True,
+mm_scalar seq p=1 n=1: within 2*gamma_n*|A||B| of NumPy,True,max abs err 0.000e+00
+mm_scalar seq p=1 n=1: bit-identical to sequential baseline,True,
+mm_scalar tiles p=1 n=1: within 2*gamma_n*|A||B| of NumPy,True,max abs err 0.000e+00
+mm_scalar tiles p=1 n=1: bit-identical to sequential baseline,True,
+mm_scalar omp p=1 n=1: within 2*gamma_n*|A||B| of NumPy,True,max abs err 0.000e+00
+mm_scalar omp p=1 n=1: bit-identical to sequential baseline,True,
+mm_scalar omp p=1 n=1: reported threads = OMP_NUM_THREADS,True,reported 1
+mm_scalar omp p=2 n=1: within 2*gamma_n*|A||B| of NumPy,True,max abs err 0.000e+00
+mm_scalar omp p=2 n=1: bit-identical to sequential baseline,True,
+mm_scalar omp p=2 n=1: reported threads = OMP_NUM_THREADS,True,reported 2
+mm_scalar omp p=3 n=1: within 2*gamma_n*|A||B| of NumPy,True,max abs err 0.000e+00
+mm_scalar omp p=3 n=1: bit-identical to sequential baseline,True,
+mm_scalar omp p=3 n=1: reported threads = OMP_NUM_THREADS,True,reported 3
+mm_scalar omp p=4 n=1: within 2*gamma_n*|A||B| of NumPy,True,max abs err 0.000e+00
+mm_scalar omp p=4 n=1: bit-identical to sequential baseline,True,
+mm_scalar omp p=4 n=1: reported threads = OMP_NUM_THREADS,True,reported 4
+mm_scalar omp p=8 n=1: within 2*gamma_n*|A||B| of NumPy,True,max abs err 0.000e+00
+mm_scalar omp p=8 n=1: bit-identical to sequential baseline,True,
+mm_scalar omp p=8 n=1: reported threads = OMP_NUM_THREADS,True,reported 8
+mm_simd seq p=1 n=1: within 2*gamma_n*|A||B| of NumPy,True,max abs err 0.000e+00
+mm_simd seq p=1 n=1: bit-identical to sequential baseline,True,
+mm_simd tiles p=1 n=1: within 2*gamma_n*|A||B| of NumPy,True,max abs err 0.000e+00
+mm_simd tiles p=1 n=1: bit-identical to sequential baseline,True,
+mm_simd omp p=1 n=1: within 2*gamma_n*|A||B| of NumPy,True,max abs err 0.000e+00
+mm_simd omp p=1 n=1: bit-identical to sequential baseline,True,
+mm_simd omp p=1 n=1: reported threads = OMP_NUM_THREADS,True,reported 1
+mm_simd omp p=2 n=1: within 2*gamma_n*|A||B| of NumPy,True,max abs err 0.000e+00
+mm_simd omp p=2 n=1: bit-identical to sequential baseline,True,
+mm_simd omp p=2 n=1: reported threads = OMP_NUM_THREADS,True,reported 2
+mm_simd omp p=3 n=1: within 2*gamma_n*|A||B| of NumPy,True,max abs err 0.000e+00
+mm_simd omp p=3 n=1: bit-identical to sequential baseline,True,
+mm_simd omp p=3 n=1: reported threads = OMP_NUM_THREADS,True,reported 3
+mm_simd omp p=4 n=1: within 2*gamma_n*|A||B| of NumPy,True,max abs err 0.000e+00
+mm_simd omp p=4 n=1: bit-identical to sequential baseline,True,
+mm_simd omp p=4 n=1: reported threads = OMP_NUM_THREADS,True,reported 4
+mm_simd omp p=8 n=1: within 2*gamma_n*|A||B| of NumPy,True,max abs err 0.000e+00
+mm_simd omp p=8 n=1: bit-identical to sequential baseline,True,
+mm_simd omp p=8 n=1: reported threads = OMP_NUM_THREADS,True,reported 8
+mm seq p=1 n=33: within 2*gamma_n*|A||B| of NumPy,True,max abs err 3.553e-15
+mm seq p=1 n=33: bit-identical to sequential baseline,True,
+mm tiles p=1 n=33: within 2*gamma_n*|A||B| of NumPy,True,max abs err 3.553e-15
+mm tiles p=1 n=33: bit-identical to sequential baseline,True,
+mm omp p=1 n=33: within 2*gamma_n*|A||B| of NumPy,True,max abs err 3.553e-15
+mm omp p=1 n=33: bit-identical to sequential baseline,True,
+mm omp p=1 n=33: reported threads = OMP_NUM_THREADS,True,reported 1
+mm omp p=2 n=33: within 2*gamma_n*|A||B| of NumPy,True,max abs err 3.553e-15
+mm omp p=2 n=33: bit-identical to sequential baseline,True,
+mm omp p=2 n=33: reported threads = OMP_NUM_THREADS,True,reported 2
+mm omp p=3 n=33: within 2*gamma_n*|A||B| of NumPy,True,max abs err 3.553e-15
+mm omp p=3 n=33: bit-identical to sequential baseline,True,
+mm omp p=3 n=33: reported threads = OMP_NUM_THREADS,True,reported 3
+mm omp p=4 n=33: within 2*gamma_n*|A||B| of NumPy,True,max abs err 3.553e-15
+mm omp p=4 n=33: bit-identical to sequential baseline,True,
+mm omp p=4 n=33: reported threads = OMP_NUM_THREADS,True,reported 4
+mm omp p=8 n=33: within 2*gamma_n*|A||B| of NumPy,True,max abs err 3.553e-15
+mm omp p=8 n=33: bit-identical to sequential baseline,True,
+mm omp p=8 n=33: reported threads = OMP_NUM_THREADS,True,reported 8
+mm_nomp seq p=1 n=33: within 2*gamma_n*|A||B| of NumPy,True,max abs err 3.553e-15
+mm_nomp seq p=1 n=33: bit-identical to sequential baseline,True,
+mm_nomp tiles p=1 n=33: within 2*gamma_n*|A||B| of NumPy,True,max abs err 3.553e-15
+mm_nomp tiles p=1 n=33: bit-identical to sequential baseline,True,
+mm_scalar seq p=1 n=33: within 2*gamma_n*|A||B| of NumPy,True,max abs err 3.553e-15
+mm_scalar seq p=1 n=33: bit-identical to sequential baseline,True,
+mm_scalar tiles p=1 n=33: within 2*gamma_n*|A||B| of NumPy,True,max abs err 3.553e-15
+mm_scalar tiles p=1 n=33: bit-identical to sequential baseline,True,
+mm_scalar omp p=1 n=33: within 2*gamma_n*|A||B| of NumPy,True,max abs err 3.553e-15
+mm_scalar omp p=1 n=33: bit-identical to sequential baseline,True,
+mm_scalar omp p=1 n=33: reported threads = OMP_NUM_THREADS,True,reported 1
+mm_scalar omp p=2 n=33: within 2*gamma_n*|A||B| of NumPy,True,max abs err 3.553e-15
+mm_scalar omp p=2 n=33: bit-identical to sequential baseline,True,
+mm_scalar omp p=2 n=33: reported threads = OMP_NUM_THREADS,True,reported 2
+mm_scalar omp p=3 n=33: within 2*gamma_n*|A||B| of NumPy,True,max abs err 3.553e-15
+mm_scalar omp p=3 n=33: bit-identical to sequential baseline,True,
+mm_scalar omp p=3 n=33: reported threads = OMP_NUM_THREADS,True,reported 3
+mm_scalar omp p=4 n=33: within 2*gamma_n*|A||B| of NumPy,True,max abs err 3.553e-15
+mm_scalar omp p=4 n=33: bit-identical to sequential baseline,True,
+mm_scalar omp p=4 n=33: reported threads = OMP_NUM_THREADS,True,reported 4
+mm_scalar omp p=8 n=33: within 2*gamma_n*|A||B| of NumPy,True,max abs err 3.553e-15
+mm_scalar omp p=8 n=33: bit-identical to sequential baseline,True,
+mm_scalar omp p=8 n=33: reported threads = OMP_NUM_THREADS,True,reported 8
+mm_simd seq p=1 n=33: within 2*gamma_n*|A||B| of NumPy,True,max abs err 3.553e-15
+mm_simd seq p=1 n=33: bit-identical to sequential baseline,True,
+mm_simd tiles p=1 n=33: within 2*gamma_n*|A||B| of NumPy,True,max abs err 3.553e-15
+mm_simd tiles p=1 n=33: bit-identical to sequential baseline,True,
+mm_simd omp p=1 n=33: within 2*gamma_n*|A||B| of NumPy,True,max abs err 3.553e-15
+mm_simd omp p=1 n=33: bit-identical to sequential baseline,True,
+mm_simd omp p=1 n=33: reported threads = OMP_NUM_THREADS,True,reported 1
+mm_simd omp p=2 n=33: within 2*gamma_n*|A||B| of NumPy,True,max abs err 3.553e-15
+mm_simd omp p=2 n=33: bit-identical to sequential baseline,True,
+mm_simd omp p=2 n=33: reported threads = OMP_NUM_THREADS,True,reported 2
+mm_simd omp p=3 n=33: within 2*gamma_n*|A||B| of NumPy,True,max abs err 3.553e-15
+mm_simd omp p=3 n=33: bit-identical to sequential baseline,True,
+mm_simd omp p=3 n=33: reported threads = OMP_NUM_THREADS,True,reported 3
+mm_simd omp p=4 n=33: within 2*gamma_n*|A||B| of NumPy,True,max abs err 3.553e-15
+mm_simd omp p=4 n=33: bit-identical to sequential baseline,True,
+mm_simd omp p=4 n=33: reported threads = OMP_NUM_THREADS,True,reported 4
+mm_simd omp p=8 n=33: within 2*gamma_n*|A||B| of NumPy,True,max abs err 3.553e-15
+mm_simd omp p=8 n=33: bit-identical to sequential baseline,True,
+mm_simd omp p=8 n=33: reported threads = OMP_NUM_THREADS,True,reported 8
+mm seq p=1 n=64: within 2*gamma_n*|A||B| of NumPy,True,max abs err 7.105e-15
+mm seq p=1 n=64: bit-identical to sequential baseline,True,
+mm tiles p=1 n=64: within 2*gamma_n*|A||B| of NumPy,True,max abs err 7.105e-15
+mm tiles p=1 n=64: bit-identical to sequential baseline,True,
+mm omp p=1 n=64: within 2*gamma_n*|A||B| of NumPy,True,max abs err 7.105e-15
+mm omp p=1 n=64: bit-identical to sequential baseline,True,
+mm omp p=1 n=64: reported threads = OMP_NUM_THREADS,True,reported 1
+mm omp p=2 n=64: within 2*gamma_n*|A||B| of NumPy,True,max abs err 7.105e-15
+mm omp p=2 n=64: bit-identical to sequential baseline,True,
+mm omp p=2 n=64: reported threads = OMP_NUM_THREADS,True,reported 2
+mm omp p=3 n=64: within 2*gamma_n*|A||B| of NumPy,True,max abs err 7.105e-15
+mm omp p=3 n=64: bit-identical to sequential baseline,True,
+mm omp p=3 n=64: reported threads = OMP_NUM_THREADS,True,reported 3
+mm omp p=4 n=64: within 2*gamma_n*|A||B| of NumPy,True,max abs err 7.105e-15
+mm omp p=4 n=64: bit-identical to sequential baseline,True,
+mm omp p=4 n=64: reported threads = OMP_NUM_THREADS,True,reported 4
+mm omp p=8 n=64: within 2*gamma_n*|A||B| of NumPy,True,max abs err 7.105e-15
+mm omp p=8 n=64: bit-identical to sequential baseline,True,
+mm omp p=8 n=64: reported threads = OMP_NUM_THREADS,True,reported 8
+mm_nomp seq p=1 n=64: within 2*gamma_n*|A||B| of NumPy,True,max abs err 7.105e-15
+mm_nomp seq p=1 n=64: bit-identical to sequential baseline,True,
+mm_nomp tiles p=1 n=64: within 2*gamma_n*|A||B| of NumPy,True,max abs err 7.105e-15
+mm_nomp tiles p=1 n=64: bit-identical to sequential baseline,True,
+mm_scalar seq p=1 n=64: within 2*gamma_n*|A||B| of NumPy,True,max abs err 7.105e-15
+mm_scalar seq p=1 n=64: bit-identical to sequential baseline,True,
+mm_scalar tiles p=1 n=64: within 2*gamma_n*|A||B| of NumPy,True,max abs err 7.105e-15
+mm_scalar tiles p=1 n=64: bit-identical to sequential baseline,True,
+mm_scalar omp p=1 n=64: within 2*gamma_n*|A||B| of NumPy,True,max abs err 7.105e-15
+mm_scalar omp p=1 n=64: bit-identical to sequential baseline,True,
+mm_scalar omp p=1 n=64: reported threads = OMP_NUM_THREADS,True,reported 1
+mm_scalar omp p=2 n=64: within 2*gamma_n*|A||B| of NumPy,True,max abs err 7.105e-15
+mm_scalar omp p=2 n=64: bit-identical to sequential baseline,True,
+mm_scalar omp p=2 n=64: reported threads = OMP_NUM_THREADS,True,reported 2
+mm_scalar omp p=3 n=64: within 2*gamma_n*|A||B| of NumPy,True,max abs err 7.105e-15
+mm_scalar omp p=3 n=64: bit-identical to sequential baseline,True,
+mm_scalar omp p=3 n=64: reported threads = OMP_NUM_THREADS,True,reported 3
+mm_scalar omp p=4 n=64: within 2*gamma_n*|A||B| of NumPy,True,max abs err 7.105e-15
+mm_scalar omp p=4 n=64: bit-identical to sequential baseline,True,
+mm_scalar omp p=4 n=64: reported threads = OMP_NUM_THREADS,True,reported 4
+mm_scalar omp p=8 n=64: within 2*gamma_n*|A||B| of NumPy,True,max abs err 7.105e-15
+mm_scalar omp p=8 n=64: bit-identical to sequential baseline,True,
+mm_scalar omp p=8 n=64: reported threads = OMP_NUM_THREADS,True,reported 8
+mm_simd seq p=1 n=64: within 2*gamma_n*|A||B| of NumPy,True,max abs err 7.105e-15
+mm_simd seq p=1 n=64: bit-identical to sequential baseline,True,
+mm_simd tiles p=1 n=64: within 2*gamma_n*|A||B| of NumPy,True,max abs err 7.105e-15
+mm_simd tiles p=1 n=64: bit-identical to sequential baseline,True,
+mm_simd omp p=1 n=64: within 2*gamma_n*|A||B| of NumPy,True,max abs err 7.105e-15
+mm_simd omp p=1 n=64: bit-identical to sequential baseline,True,
+mm_simd omp p=1 n=64: reported threads = OMP_NUM_THREADS,True,reported 1
+mm_simd omp p=2 n=64: within 2*gamma_n*|A||B| of NumPy,True,max abs err 7.105e-15
+mm_simd omp p=2 n=64: bit-identical to sequential baseline,True,
+mm_simd omp p=2 n=64: reported threads = OMP_NUM_THREADS,True,reported 2
+mm_simd omp p=3 n=64: within 2*gamma_n*|A||B| of NumPy,True,max abs err 7.105e-15
+mm_simd omp p=3 n=64: bit-identical to sequential baseline,True,
+mm_simd omp p=3 n=64: reported threads = OMP_NUM_THREADS,True,reported 3
+mm_simd omp p=4 n=64: within 2*gamma_n*|A||B| of NumPy,True,max abs err 7.105e-15
+mm_simd omp p=4 n=64: bit-identical to sequential baseline,True,
+mm_simd omp p=4 n=64: reported threads = OMP_NUM_THREADS,True,reported 4
+mm_simd omp p=8 n=64: within 2*gamma_n*|A||B| of NumPy,True,max abs err 7.105e-15
+mm_simd omp p=8 n=64: bit-identical to sequential baseline,True,
+mm_simd omp p=8 n=64: reported threads = OMP_NUM_THREADS,True,reported 8
+mm seq p=1 n=100: within 2*gamma_n*|A||B| of NumPy,True,max abs err 2.132e-14
+mm seq p=1 n=100: bit-identical to sequential baseline,True,
+mm tiles p=1 n=100: within 2*gamma_n*|A||B| of NumPy,True,max abs err 2.132e-14
+mm tiles p=1 n=100: bit-identical to sequential baseline,True,
+mm omp p=1 n=100: within 2*gamma_n*|A||B| of NumPy,True,max abs err 2.132e-14
+mm omp p=1 n=100: bit-identical to sequential baseline,True,
+mm omp p=1 n=100: reported threads = OMP_NUM_THREADS,True,reported 1
+mm omp p=2 n=100: within 2*gamma_n*|A||B| of NumPy,True,max abs err 2.132e-14
+mm omp p=2 n=100: bit-identical to sequential baseline,True,
+mm omp p=2 n=100: reported threads = OMP_NUM_THREADS,True,reported 2
+mm omp p=3 n=100: within 2*gamma_n*|A||B| of NumPy,True,max abs err 2.132e-14
+mm omp p=3 n=100: bit-identical to sequential baseline,True,
+mm omp p=3 n=100: reported threads = OMP_NUM_THREADS,True,reported 3
+mm omp p=4 n=100: within 2*gamma_n*|A||B| of NumPy,True,max abs err 2.132e-14
+mm omp p=4 n=100: bit-identical to sequential baseline,True,
+mm omp p=4 n=100: reported threads = OMP_NUM_THREADS,True,reported 4
+mm omp p=8 n=100: within 2*gamma_n*|A||B| of NumPy,True,max abs err 2.132e-14
+mm omp p=8 n=100: bit-identical to sequential baseline,True,
+mm omp p=8 n=100: reported threads = OMP_NUM_THREADS,True,reported 8
+mm_nomp seq p=1 n=100: within 2*gamma_n*|A||B| of NumPy,True,max abs err 2.132e-14
+mm_nomp seq p=1 n=100: bit-identical to sequential baseline,True,
+mm_nomp tiles p=1 n=100: within 2*gamma_n*|A||B| of NumPy,True,max abs err 2.132e-14
+mm_nomp tiles p=1 n=100: bit-identical to sequential baseline,True,
+mm_scalar seq p=1 n=100: within 2*gamma_n*|A||B| of NumPy,True,max abs err 2.132e-14
+mm_scalar seq p=1 n=100: bit-identical to sequential baseline,True,
+mm_scalar tiles p=1 n=100: within 2*gamma_n*|A||B| of NumPy,True,max abs err 2.132e-14
+mm_scalar tiles p=1 n=100: bit-identical to sequential baseline,True,
+mm_scalar omp p=1 n=100: within 2*gamma_n*|A||B| of NumPy,True,max abs err 2.132e-14
+mm_scalar omp p=1 n=100: bit-identical to sequential baseline,True,
+mm_scalar omp p=1 n=100: reported threads = OMP_NUM_THREADS,True,reported 1
+mm_scalar omp p=2 n=100: within 2*gamma_n*|A||B| of NumPy,True,max abs err 2.132e-14
+mm_scalar omp p=2 n=100: bit-identical to sequential baseline,True,
+mm_scalar omp p=2 n=100: reported threads = OMP_NUM_THREADS,True,reported 2
+mm_scalar omp p=3 n=100: within 2*gamma_n*|A||B| of NumPy,True,max abs err 2.132e-14
+mm_scalar omp p=3 n=100: bit-identical to sequential baseline,True,
+mm_scalar omp p=3 n=100: reported threads = OMP_NUM_THREADS,True,reported 3
+mm_scalar omp p=4 n=100: within 2*gamma_n*|A||B| of NumPy,True,max abs err 2.132e-14
+mm_scalar omp p=4 n=100: bit-identical to sequential baseline,True,
+mm_scalar omp p=4 n=100: reported threads = OMP_NUM_THREADS,True,reported 4
+mm_scalar omp p=8 n=100: within 2*gamma_n*|A||B| of NumPy,True,max abs err 2.132e-14
+mm_scalar omp p=8 n=100: bit-identical to sequential baseline,True,
+mm_scalar omp p=8 n=100: reported threads = OMP_NUM_THREADS,True,reported 8
+mm_simd seq p=1 n=100: within 2*gamma_n*|A||B| of NumPy,True,max abs err 2.132e-14
+mm_simd seq p=1 n=100: bit-identical to sequential baseline,True,
+mm_simd tiles p=1 n=100: within 2*gamma_n*|A||B| of NumPy,True,max abs err 2.132e-14
+mm_simd tiles p=1 n=100: bit-identical to sequential baseline,True,
+mm_simd omp p=1 n=100: within 2*gamma_n*|A||B| of NumPy,True,max abs err 2.132e-14
+mm_simd omp p=1 n=100: bit-identical to sequential baseline,True,
+mm_simd omp p=1 n=100: reported threads = OMP_NUM_THREADS,True,reported 1
+mm_simd omp p=2 n=100: within 2*gamma_n*|A||B| of NumPy,True,max abs err 2.132e-14
+mm_simd omp p=2 n=100: bit-identical to sequential baseline,True,
+mm_simd omp p=2 n=100: reported threads = OMP_NUM_THREADS,True,reported 2
+mm_simd omp p=3 n=100: within 2*gamma_n*|A||B| of NumPy,True,max abs err 2.132e-14
+mm_simd omp p=3 n=100: bit-identical to sequential baseline,True,
+mm_simd omp p=3 n=100: reported threads = OMP_NUM_THREADS,True,reported 3
+mm_simd omp p=4 n=100: within 2*gamma_n*|A||B| of NumPy,True,max abs err 2.132e-14
+mm_simd omp p=4 n=100: bit-identical to sequential baseline,True,
+mm_simd omp p=4 n=100: reported threads = OMP_NUM_THREADS,True,reported 4
+mm_simd omp p=8 n=100: within 2*gamma_n*|A||B| of NumPy,True,max abs err 2.132e-14
+mm_simd omp p=8 n=100: bit-identical to sequential baseline,True,
+mm_simd omp p=8 n=100: reported threads = OMP_NUM_THREADS,True,reported 8
+mm seq p=1 n=256: within 2*gamma_n*|A||B| of NumPy,True,max abs err 3.553e-14
+mm seq p=1 n=256: bit-identical to sequential baseline,True,
+mm tiles p=1 n=256: within 2*gamma_n*|A||B| of NumPy,True,max abs err 3.553e-14
+mm tiles p=1 n=256: bit-identical to sequential baseline,True,
+mm omp p=1 n=256: within 2*gamma_n*|A||B| of NumPy,True,max abs err 3.553e-14
+mm omp p=1 n=256: bit-identical to sequential baseline,True,
+mm omp p=1 n=256: reported threads = OMP_NUM_THREADS,True,reported 1
+mm omp p=2 n=256: within 2*gamma_n*|A||B| of NumPy,True,max abs err 3.553e-14
+mm omp p=2 n=256: bit-identical to sequential baseline,True,
+mm omp p=2 n=256: reported threads = OMP_NUM_THREADS,True,reported 2
+mm omp p=3 n=256: within 2*gamma_n*|A||B| of NumPy,True,max abs err 3.553e-14
+mm omp p=3 n=256: bit-identical to sequential baseline,True,
+mm omp p=3 n=256: reported threads = OMP_NUM_THREADS,True,reported 3
+mm omp p=4 n=256: within 2*gamma_n*|A||B| of NumPy,True,max abs err 3.553e-14
+mm omp p=4 n=256: bit-identical to sequential baseline,True,
+mm omp p=4 n=256: reported threads = OMP_NUM_THREADS,True,reported 4
+mm omp p=8 n=256: within 2*gamma_n*|A||B| of NumPy,True,max abs err 3.553e-14
+mm omp p=8 n=256: bit-identical to sequential baseline,True,
+mm omp p=8 n=256: reported threads = OMP_NUM_THREADS,True,reported 8
+mm_nomp seq p=1 n=256: within 2*gamma_n*|A||B| of NumPy,True,max abs err 3.553e-14
+mm_nomp seq p=1 n=256: bit-identical to sequential baseline,True,
+mm_nomp tiles p=1 n=256: within 2*gamma_n*|A||B| of NumPy,True,max abs err 3.553e-14
+mm_nomp tiles p=1 n=256: bit-identical to sequential baseline,True,
+mm_scalar seq p=1 n=256: within 2*gamma_n*|A||B| of NumPy,True,max abs err 3.553e-14
+mm_scalar seq p=1 n=256: bit-identical to sequential baseline,True,
+mm_scalar tiles p=1 n=256: within 2*gamma_n*|A||B| of NumPy,True,max abs err 3.553e-14
+mm_scalar tiles p=1 n=256: bit-identical to sequential baseline,True,
+mm_scalar omp p=1 n=256: within 2*gamma_n*|A||B| of NumPy,True,max abs err 3.553e-14
+mm_scalar omp p=1 n=256: bit-identical to sequential baseline,True,
+mm_scalar omp p=1 n=256: reported threads = OMP_NUM_THREADS,True,reported 1
+mm_scalar omp p=2 n=256: within 2*gamma_n*|A||B| of NumPy,True,max abs err 3.553e-14
+mm_scalar omp p=2 n=256: bit-identical to sequential baseline,True,
+mm_scalar omp p=2 n=256: reported threads = OMP_NUM_THREADS,True,reported 2
+mm_scalar omp p=3 n=256: within 2*gamma_n*|A||B| of NumPy,True,max abs err 3.553e-14
+mm_scalar omp p=3 n=256: bit-identical to sequential baseline,True,
+mm_scalar omp p=3 n=256: reported threads = OMP_NUM_THREADS,True,reported 3
+mm_scalar omp p=4 n=256: within 2*gamma_n*|A||B| of NumPy,True,max abs err 3.553e-14
+mm_scalar omp p=4 n=256: bit-identical to sequential baseline,True,
+mm_scalar omp p=4 n=256: reported threads = OMP_NUM_THREADS,True,reported 4
+mm_scalar omp p=8 n=256: within 2*gamma_n*|A||B| of NumPy,True,max abs err 3.553e-14
+mm_scalar omp p=8 n=256: bit-identical to sequential baseline,True,
+mm_scalar omp p=8 n=256: reported threads = OMP_NUM_THREADS,True,reported 8
+mm_simd seq p=1 n=256: within 2*gamma_n*|A||B| of NumPy,True,max abs err 3.553e-14
+mm_simd seq p=1 n=256: bit-identical to sequential baseline,True,
+mm_simd tiles p=1 n=256: within 2*gamma_n*|A||B| of NumPy,True,max abs err 3.553e-14
+mm_simd tiles p=1 n=256: bit-identical to sequential baseline,True,
+mm_simd omp p=1 n=256: within 2*gamma_n*|A||B| of NumPy,True,max abs err 3.553e-14
+mm_simd omp p=1 n=256: bit-identical to sequential baseline,True,
+mm_simd omp p=1 n=256: reported threads = OMP_NUM_THREADS,True,reported 1
+mm_simd omp p=2 n=256: within 2*gamma_n*|A||B| of NumPy,True,max abs err 3.553e-14
+mm_simd omp p=2 n=256: bit-identical to sequential baseline,True,
+mm_simd omp p=2 n=256: reported threads = OMP_NUM_THREADS,True,reported 2
+mm_simd omp p=3 n=256: within 2*gamma_n*|A||B| of NumPy,True,max abs err 3.553e-14
+mm_simd omp p=3 n=256: bit-identical to sequential baseline,True,
+mm_simd omp p=3 n=256: reported threads = OMP_NUM_THREADS,True,reported 3
+mm_simd omp p=4 n=256: within 2*gamma_n*|A||B| of NumPy,True,max abs err 3.553e-14
+mm_simd omp p=4 n=256: bit-identical to sequential baseline,True,
+mm_simd omp p=4 n=256: reported threads = OMP_NUM_THREADS,True,reported 4
+mm_simd omp p=8 n=256: within 2*gamma_n*|A||B| of NumPy,True,max abs err 3.553e-14
+mm_simd omp p=8 n=256: bit-identical to sequential baseline,True,
+mm_simd omp p=8 n=256: reported threads = OMP_NUM_THREADS,True,reported 8
+mm omp p=8 n=256: 20 repeated runs bit-identical (no race on C),True,

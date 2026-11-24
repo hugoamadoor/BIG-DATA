@@ -1,0 +1,7 @@
+binary,function,present,scalar,packed_xmm,packed_ymm,packed_zmm
+mm,mm_blocked,True,2,0,0,0
+mm,row_tile,True,2,0,0,0
+mm_scalar,mm_blocked,True,6,0,0,0
+mm_scalar,row_tile,True,6,0,0,0
+mm_simd,mm_blocked,True,6,6,6,0
+mm_simd,row_tile,True,6,6,6,0
