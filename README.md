@@ -7,8 +7,8 @@ Universidad de Las Palmas de Gran Canaria (ULPGC), academic year 2026-2027.
 
 This repository holds a series of experimental studies on one problem: multiplying two n × n matrices.
 Each stage builds on the previous one. It starts with basic implementations in three languages, then
-optimises the sequential code, adds sparse matrices, and finally parallelises the fastest kernel. Every
-stage has its own code, inputs, raw measurements, analysis scripts and a written report.
+optimises the sequential code, adds sparse matrices, parallelises the fastest kernel, and finally
+distributes it with Apache Spark. Every stage has its own code, inputs, raw measurements, analysis scripts and a written report.
 
 ## Assignments
 
@@ -17,7 +17,7 @@ stage has its own code, inputs, raw measurements, analysis scripts and a written
 | 1 | [Basic matrix multiplication](Assignment01_AmadorHidalgo/) | How do Python, Java and C compare on the same naive triple-loop algorithm? | [PDF](Assignment01_AmadorHidalgo/report/Assignment01_AmadorHidalgo_Report.pdf) |
 | 2 | [Optimised and sparse multiplication](Assignment02_AmadorHidalgo/) | How much do loop reordering and cache blocking help, and when does a sparse (CSR) format beat dense? | [PDF](Assignment02_AmadorHidalgo/report/Assignment02_AmadorHidalgo_Report.pdf) |
 | 3 | [Parallel multiplication and vectorisation](Assignment03_AmadorHidalgo/) | How does the best kernel scale with OpenMP threads, and what does AVX2 vectorisation add? | [PDF](Assignment03_AmadorHidalgo/report/Assignment03_AmadorHidalgo_Report.pdf) |
-| 4 | [Distributed multiplication](Assignment04_AmadorHidalgo_Report.pdf) | How does a Spark implementation scale with workers, and where does its time go? | [PDF](Assignment04_AmadorHidalgo_Report.pdf) |
+| 4 | [Distributed multiplication](Assignment04_AmadorHidalgo/) | How does a Spark implementation scale with workers, and where does its time go? | [PDF](Assignment04_AmadorHidalgo/report/Assignment04_AmadorHidalgo_Report.pdf) |
 
 ## Key findings
 
@@ -31,6 +31,10 @@ stage has its own code, inputs, raw measurements, analysis scripts and a written
 - **Assignment 3.** OpenMP with two threads gave a speed-up of 1.84 to 2.02 on a 2-core machine, and the
   results stayed bit-identical. Running more threads than cores added nothing. AVX2 vectorisation added a
   further 1.4 to 1.7 times, independently of the number of threads.
+- **Assignment 4.** In a local Spark cluster, run on one 2-core machine, two workers were 1.61 times faster
+  than one at n = 3072 and 1.42 times faster than the sequential program. They were still 1.38 times
+  slower than OpenMP on the same cores. Framework overhead and replicating B in every worker explain the
+  gap, and memory limited the largest size.
 
 All timings come from cloud virtual machines, and each assignment ran on a different instance. Absolute
 times are therefore comparable within one report, not across reports.
@@ -57,7 +61,7 @@ cd Assignment03_AmadorHidalgo
 ```
 
 The requirements are GCC, Python 3 with the packages in each `requirements.txt`, and a JDK for
-Assignment 1.
+Assignments 1 and 4.
 
 ## Use of generative AI
 
