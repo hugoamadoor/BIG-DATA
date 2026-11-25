@@ -1,0 +1,5 @@
+config,master_start_s,workers_register_s,cluster_start_s,driver_start_s,executors_register_s,app_start_s
+1x1,1.948,2.198,4.147,6.204,1.174,7.355
+1x2,1.918,2.205,4.111,6.112,1.099,7.264
+2x1,2.026,3.805,5.836,8.524,0.9673,9.465
+4x1,1.99,7.148,9.162,12.42,0.8754,13.3

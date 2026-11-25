@@ -1,0 +1,16 @@
+{
+  "spark.master": "spark://127.0.0.1:7077",
+  "spark.app.name": "matmul-1x2",
+  "spark.executor.cores": "2",
+  "spark.executor.memory": "1600m",
+  "spark.cores.max": "2",
+  "spark.driver.memory": "1600m",
+  "spark.driver.host": "127.0.0.1",
+  "spark.driver.bindAddress": "127.0.0.1",
+  "spark.python.worker.reuse": "true",
+  "spark.task.maxFailures": "1",
+  "spark.ui.showConsoleProgress": "false",
+  "spark.executorEnv.OPENBLAS_NUM_THREADS": "1",
+  "spark.ui.port": "4040",
+  "spark.scheduler.mode": "FIFO"
+}

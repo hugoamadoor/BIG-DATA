@@ -1,0 +1,8 @@
+# Harness, Spark driver, analysis and report. The block kernel (src/kernel/mmkernel.c) and the reference
+# programs are plain C; NumPy only holds and moves the matrices and validates results.
+numpy==2.5.3
+pandas==3.0.5
+matplotlib==3.11.2
+reportlab==5.0.1
+psutil==7.2.2
+pyspark==4.0.1

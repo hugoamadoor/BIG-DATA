@@ -1,0 +1,17 @@
+file,n,seed,generator,distribution,dtype,bytes,sha256
+A_16.bin,16,20261028,numpy.random.default_rng (PCG64),"uniform [0, 1)",float64 little-endian row-major,2048,798d68dd0e1d09dea1fddd392ab8ee99bdf349fb36d73b0d1bad76120858dcee
+B_16.bin,16,20261029,numpy.random.default_rng (PCG64),"uniform [0, 1)",float64 little-endian row-major,2048,efe0799e8fcb159d1173e5cb604334af9104d5f338eb583fd19b78a673a2cb06
+A_64.bin,64,20261076,numpy.random.default_rng (PCG64),"uniform [0, 1)",float64 little-endian row-major,32768,faf92fab42b75318981cf4d3681785d040bc55a16f50b4e625b8463ce38071c3
+B_64.bin,64,20261077,numpy.random.default_rng (PCG64),"uniform [0, 1)",float64 little-endian row-major,32768,9abc76651c67c61b78192bb6178e6aefa93823da306847297fb144e25508f61f
+A_100.bin,100,20261112,numpy.random.default_rng (PCG64),"uniform [0, 1)",float64 little-endian row-major,80000,f115ab5b03c75a1583b98abaf041e79a317fb2478cdcd4485809194bcef91463
+B_100.bin,100,20261113,numpy.random.default_rng (PCG64),"uniform [0, 1)",float64 little-endian row-major,80000,5ca2a451926bf83fac6e4b3024045f196619d3d92d1b82fe2abe368f3a185367
+A_256.bin,256,20261268,numpy.random.default_rng (PCG64),"uniform [0, 1)",float64 little-endian row-major,524288,3c9c39073b531205072e04cd248d2d932ec956bab5488d55a1868d36dfd9d3d7
+B_256.bin,256,20261269,numpy.random.default_rng (PCG64),"uniform [0, 1)",float64 little-endian row-major,524288,ceb73da791405d93fdc9a752b4134467fc07f28bb115fa70e4b76ad52e5afa73
+A_512.bin,512,20261524,numpy.random.default_rng (PCG64),"uniform [0, 1)",float64 little-endian row-major,2097152,96faae82afb203a8aa23f36442e73c68e2196b72cdd45f90469c22ae2c4a738b
+B_512.bin,512,20261525,numpy.random.default_rng (PCG64),"uniform [0, 1)",float64 little-endian row-major,2097152,f9b8ea350c30d497d44b7a7a3469659df0c8f900b93b43985cdd61b349b4a591
+A_1024.bin,1024,20262036,numpy.random.default_rng (PCG64),"uniform [0, 1)",float64 little-endian row-major,8388608,ddaf99f5da41c42ac1217e997f7c23a01295259d8d56d50f67ff8f3de2bf57a6
+B_1024.bin,1024,20262037,numpy.random.default_rng (PCG64),"uniform [0, 1)",float64 little-endian row-major,8388608,5eb350956d5938b61c5233bb2d5948bf011636fa046e9027a160fd64cd3d7414
+A_2048.bin,2048,20263060,numpy.random.default_rng (PCG64),"uniform [0, 1)",float64 little-endian row-major,33554432,1bc525c713910518b81adee81d05c068c3ad07a5ec633636447dfb3de990abe7
+B_2048.bin,2048,20263061,numpy.random.default_rng (PCG64),"uniform [0, 1)",float64 little-endian row-major,33554432,369394b4bf782a65249a167b494aa933f31c796ab0d906665728297d72daf6d7
+A_3072.bin,3072,20264084,numpy.random.default_rng (PCG64),"uniform [0, 1)",float64 little-endian row-major,75497472,c19c6092c78521aa261dd928285cc03f5b08732aebbeba9d78c47720d933b16c
+B_3072.bin,3072,20264085,numpy.random.default_rng (PCG64),"uniform [0, 1)",float64 little-endian row-major,75497472,593927ab3d50af603ea69519d56d782a9650e8ea53c39633e52a1ddc762c297e

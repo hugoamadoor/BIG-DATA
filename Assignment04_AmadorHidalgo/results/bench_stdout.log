@@ -1,0 +1,603 @@
+[15:01:48] tests: 91/91 checks passed
+[15:02:00] r1 R mm:seq p=1 n=1024 ok median 0.4873 s rss 26.0 MiB
+[15:02:03] r1 R mm:omp p=2 n=1024 ok median 0.2448 s rss 26.0 MiB
+[15:02:47] r1 R dense:ijk p=1 n=1024 ok median 7.4619 s rss 25.7 MiB
+[15:03:11] r1 R mm:seq p=1 n=2048 ok median 4.0117 s rss 98.0 MiB
+[15:03:24] r1 R mm:omp p=2 n=2048 ok median 2.0904 s rss 98.1 MiB
+[15:10:22] r1 R dense:ijk p=1 n=2048 ok median 68.7625 s rss 97.6 MiB
+[15:11:12] r1 R mm:seq p=1 n=3072 ok median 12.1907 s rss 218.0 MiB
+[15:11:39] r1 R mm:omp p=2 n=3072 ok median 6.7285 s rss 218.0 MiB
+Picked up JAVA_TOOL_OPTIONS: -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Djavax.net.ssl.trustStoreType=JKS -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=36843 -Dhttp.nonProxyHosts=localhost|127.0.0.1|::1|127.*|0.*|::|169.254.*|api.anthropic.com|api-staging.anthropic.com|api-pr-preview.anthropic.com|mcp-proxy.anthropic.com|mcp-proxy-staging.anthropic.com|registry.npmjs.org|jsr.io|npm.jsr.io|pypi.org|files.pythonhosted.org|index.crates.io|proxy.golang.org|host.docker.internal|10.*|172.16.*|172.17.*|172.18.*|172.19.*|172.20.*|172.21.*|172.22.*|172.23.*|172.24.*|172.25.*|172.26.*|172.27.*|172.28.*|172.29.*|172.30.*|172.31.*|192.168.*|100.64.0.0/10|*.svc.cluster.local|*.svc.cluster.local -Djdk.http.auth.tunneling.disabledSchemes= -Djdk.http.auth.proxying.disabledSchemes=
+Picked up _JAVA_OPTIONS: -XX:+UnlockDiagnosticVMOptions -XX:DisableIntrinsic=_base64_encodeBlock,_base64_decodeBlock
+Picked up JAVA_TOOL_OPTIONS: -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Djavax.net.ssl.trustStoreType=JKS -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=36843 -Dhttp.nonProxyHosts=localhost|127.0.0.1|::1|127.*|0.*|::|169.254.*|api.anthropic.com|api-staging.anthropic.com|api-pr-preview.anthropic.com|mcp-proxy.anthropic.com|mcp-proxy-staging.anthropic.com|registry.npmjs.org|jsr.io|npm.jsr.io|pypi.org|files.pythonhosted.org|index.crates.io|proxy.golang.org|host.docker.internal|10.*|172.16.*|172.17.*|172.18.*|172.19.*|172.20.*|172.21.*|172.22.*|172.23.*|172.24.*|172.25.*|172.26.*|172.27.*|172.28.*|172.29.*|172.30.*|172.31.*|192.168.*|100.64.0.0/10|*.svc.cluster.local|*.svc.cluster.local -Djdk.http.auth.tunneling.disabledSchemes= -Djdk.http.auth.proxying.disabledSchemes=
+Picked up _JAVA_OPTIONS: -XX:+UnlockDiagnosticVMOptions -XX:DisableIntrinsic=_base64_encodeBlock,_base64_decodeBlock
+WARNING: Using incubator modules: jdk.incubator.vector
+Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
+26/11/24 15:11:44 WARN Utils: Your hostname, vm, resolves to a loopback address: 127.0.0.1; using 192.0.2.2 instead (on interface eth0)
+26/11/24 15:11:44 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+26/11/24 15:11:45 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[15:11:50] r1 1x1 n=1024: cluster 3.8 s, application 7.4 s
+[15:11:53] r1 D 1x1 rowblock P=8  n=1024  rep=0 e2e    2.804 s job    2.645 crit-kernel    0.514 valid=yes
+[15:11:55] r1 D 1x1 rowblock P=8  n=1024  rep=1 e2e    1.067 s job    1.038 crit-kernel    0.485 valid=yes
+[15:11:56] r1 D 1x1 rowblock P=8  n=1024  rep=2 e2e    1.028 s job    1.001 crit-kernel    0.462 valid=yes
+[15:11:57] r1 D 1x1 rowblock P=8  n=1024  rep=3 e2e    1.179 s job    1.155 crit-kernel    0.533 valid=yes
+[15:11:58] r1 D 1x1 rowblock P=8  n=1024  rep=4 e2e    1.006 s job    0.981 crit-kernel    0.470 valid=yes
+[15:12:00] r1 D 1x1 rowblock P=8  n=1024  rep=5 e2e    1.033 s job    1.003 crit-kernel    0.474 valid=yes
+[15:12:03] r1 D 1x1 block2d  P=2  n=1024  rep=0 e2e    2.794 s job    2.792 crit-kernel    0.300 valid=yes
+[15:12:05] r1 D 1x1 block2d  P=2  n=1024  rep=1 e2e    2.013 s job    2.011 crit-kernel    0.239 valid=yes
+[15:12:07] r1 D 1x1 block2d  P=2  n=1024  rep=2 e2e    1.774 s job    1.771 crit-kernel    0.271 valid=yes
+[15:12:09] r1 D 1x1 block2d  P=2  n=1024  rep=3 e2e    1.746 s job    1.744 crit-kernel    0.247 valid=yes
+[15:12:11] r1 D 1x1 block2d  P=2  n=1024  rep=4 e2e    1.839 s job    1.838 crit-kernel    0.223 valid=yes
+[15:12:13] r1 D 1x1 block2d  P=2  n=1024  rep=5 e2e    1.843 s job    1.841 crit-kernel    0.228 valid=yes
+Picked up JAVA_TOOL_OPTIONS: -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Djavax.net.ssl.trustStoreType=JKS -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=36843 -Dhttp.nonProxyHosts=localhost|127.0.0.1|::1|127.*|0.*|::|169.254.*|api.anthropic.com|api-staging.anthropic.com|api-pr-preview.anthropic.com|mcp-proxy.anthropic.com|mcp-proxy-staging.anthropic.com|registry.npmjs.org|jsr.io|npm.jsr.io|pypi.org|files.pythonhosted.org|index.crates.io|proxy.golang.org|host.docker.internal|10.*|172.16.*|172.17.*|172.18.*|172.19.*|172.20.*|172.21.*|172.22.*|172.23.*|172.24.*|172.25.*|172.26.*|172.27.*|172.28.*|172.29.*|172.30.*|172.31.*|192.168.*|100.64.0.0/10|*.svc.cluster.local|*.svc.cluster.local -Djdk.http.auth.tunneling.disabledSchemes= -Djdk.http.auth.proxying.disabledSchemes=
+Picked up _JAVA_OPTIONS: -XX:+UnlockDiagnosticVMOptions -XX:DisableIntrinsic=_base64_encodeBlock,_base64_decodeBlock
+Picked up JAVA_TOOL_OPTIONS: -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Djavax.net.ssl.trustStoreType=JKS -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=36843 -Dhttp.nonProxyHosts=localhost|127.0.0.1|::1|127.*|0.*|::|169.254.*|api.anthropic.com|api-staging.anthropic.com|api-pr-preview.anthropic.com|mcp-proxy.anthropic.com|mcp-proxy-staging.anthropic.com|registry.npmjs.org|jsr.io|npm.jsr.io|pypi.org|files.pythonhosted.org|index.crates.io|proxy.golang.org|host.docker.internal|10.*|172.16.*|172.17.*|172.18.*|172.19.*|172.20.*|172.21.*|172.22.*|172.23.*|172.24.*|172.25.*|172.26.*|172.27.*|172.28.*|172.29.*|172.30.*|172.31.*|192.168.*|100.64.0.0/10|*.svc.cluster.local|*.svc.cluster.local -Djdk.http.auth.tunneling.disabledSchemes= -Djdk.http.auth.proxying.disabledSchemes=
+Picked up _JAVA_OPTIONS: -XX:+UnlockDiagnosticVMOptions -XX:DisableIntrinsic=_base64_encodeBlock,_base64_decodeBlock
+WARNING: Using incubator modules: jdk.incubator.vector
+Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
+26/11/24 15:12:20 WARN Utils: Your hostname, vm, resolves to a loopback address: 127.0.0.1; using 192.0.2.2 instead (on interface eth0)
+26/11/24 15:12:20 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+26/11/24 15:12:20 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[15:12:26] r1 1x1 n=2048: cluster 4.4 s, application 7.1 s
+[15:12:34] r1 D 1x1 rowblock P=8  n=2048  rep=0 e2e    7.347 s job    7.140 crit-kernel    4.120 valid=yes
+[15:12:39] r1 D 1x1 rowblock P=8  n=2048  rep=1 e2e    5.148 s job    5.028 crit-kernel    4.041 valid=yes
+[15:12:45] r1 D 1x1 rowblock P=8  n=2048  rep=2 e2e    5.181 s job    5.120 crit-kernel    4.191 valid=yes
+[15:12:50] r1 D 1x1 rowblock P=8  n=2048  rep=3 e2e    5.173 s job    5.090 crit-kernel    4.237 valid=yes
+[15:12:55] r1 D 1x1 rowblock P=8  n=2048  rep=4 e2e    4.829 s job    4.757 crit-kernel    3.909 valid=yes
+[15:13:00] r1 D 1x1 rowblock P=8  n=2048  rep=5 e2e    4.540 s job    4.447 crit-kernel    3.750 valid=yes
+[15:13:07] r1 D 1x1 block2d  P=2  n=2048  rep=0 e2e    7.024 s job    7.013 crit-kernel    2.307 valid=yes
+[15:13:14] r1 D 1x1 block2d  P=2  n=2048  rep=1 e2e    6.500 s job    6.494 crit-kernel    1.885 valid=yes
+[15:13:20] r1 D 1x1 block2d  P=2  n=2048  rep=2 e2e    6.268 s job    6.256 crit-kernel    1.977 valid=yes
+[15:13:26] r1 D 1x1 block2d  P=2  n=2048  rep=3 e2e    5.754 s job    5.747 crit-kernel    1.829 valid=yes
+[15:13:32] r1 D 1x1 block2d  P=2  n=2048  rep=4 e2e    6.055 s job    6.047 crit-kernel    2.144 valid=yes
+[15:13:38] r1 D 1x1 block2d  P=2  n=2048  rep=5 e2e    5.771 s job    5.765 crit-kernel    1.863 valid=yes
+Picked up JAVA_TOOL_OPTIONS: -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Djavax.net.ssl.trustStoreType=JKS -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=36843 -Dhttp.nonProxyHosts=localhost|127.0.0.1|::1|127.*|0.*|::|169.254.*|api.anthropic.com|api-staging.anthropic.com|api-pr-preview.anthropic.com|mcp-proxy.anthropic.com|mcp-proxy-staging.anthropic.com|registry.npmjs.org|jsr.io|npm.jsr.io|pypi.org|files.pythonhosted.org|index.crates.io|proxy.golang.org|host.docker.internal|10.*|172.16.*|172.17.*|172.18.*|172.19.*|172.20.*|172.21.*|172.22.*|172.23.*|172.24.*|172.25.*|172.26.*|172.27.*|172.28.*|172.29.*|172.30.*|172.31.*|192.168.*|100.64.0.0/10|*.svc.cluster.local|*.svc.cluster.local -Djdk.http.auth.tunneling.disabledSchemes= -Djdk.http.auth.proxying.disabledSchemes=
+Picked up _JAVA_OPTIONS: -XX:+UnlockDiagnosticVMOptions -XX:DisableIntrinsic=_base64_encodeBlock,_base64_decodeBlock
+Picked up JAVA_TOOL_OPTIONS: -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Djavax.net.ssl.trustStoreType=JKS -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=36843 -Dhttp.nonProxyHosts=localhost|127.0.0.1|::1|127.*|0.*|::|169.254.*|api.anthropic.com|api-staging.anthropic.com|api-pr-preview.anthropic.com|mcp-proxy.anthropic.com|mcp-proxy-staging.anthropic.com|registry.npmjs.org|jsr.io|npm.jsr.io|pypi.org|files.pythonhosted.org|index.crates.io|proxy.golang.org|host.docker.internal|10.*|172.16.*|172.17.*|172.18.*|172.19.*|172.20.*|172.21.*|172.22.*|172.23.*|172.24.*|172.25.*|172.26.*|172.27.*|172.28.*|172.29.*|172.30.*|172.31.*|192.168.*|100.64.0.0/10|*.svc.cluster.local|*.svc.cluster.local -Djdk.http.auth.tunneling.disabledSchemes= -Djdk.http.auth.proxying.disabledSchemes=
+Picked up _JAVA_OPTIONS: -XX:+UnlockDiagnosticVMOptions -XX:DisableIntrinsic=_base64_encodeBlock,_base64_decodeBlock
+WARNING: Using incubator modules: jdk.incubator.vector
+Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
+26/11/24 15:13:45 WARN Utils: Your hostname, vm, resolves to a loopback address: 127.0.0.1; using 192.0.2.2 instead (on interface eth0)
+26/11/24 15:13:45 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+26/11/24 15:13:46 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[15:13:52] r1 1x1 n=3072: cluster 4.0 s, application 7.9 s
+[15:14:10] r1 D 1x1 rowblock P=8  n=3072  rep=0 e2e   17.507 s job   17.220 crit-kernel   13.357 valid=yes
+[15:14:26] r1 D 1x1 rowblock P=8  n=3072  rep=1 e2e   15.180 s job   15.019 crit-kernel   13.324 valid=yes
+[15:14:41] r1 D 1x1 rowblock P=8  n=3072  rep=2 e2e   15.218 s job   15.013 crit-kernel   13.383 valid=yes
+[15:14:56] r1 D 1x1 rowblock P=8  n=3072  rep=3 e2e   14.483 s job   14.332 crit-kernel   12.884 valid=yes
+[15:15:15] r1 D 1x1 block2d  P=2  n=3072  rep=0 e2e   18.442 s job   18.400 crit-kernel    6.632 valid=yes
+[15:15:33] r1 D 1x1 block2d  P=2  n=3072  rep=1 e2e   17.507 s job   17.484 crit-kernel    6.639 valid=yes
+[15:15:50] r1 D 1x1 block2d  P=2  n=3072  rep=2 e2e   17.617 s job   17.593 crit-kernel    6.625 valid=yes
+[15:16:08] r1 D 1x1 block2d  P=2  n=3072  rep=3 e2e   17.594 s job   17.568 crit-kernel    6.675 valid=yes
+26/11/24 15:16:09 ERROR TransportResponseHandler: Still have 1 requests outstanding when connection from /127.0.0.1:50538 is closed
+java.util.concurrent.RejectedExecutionException: Task Future(<not completed>) rejected from java.util.concurrent.ThreadPoolExecutor@6965ca99[Terminated, pool size = 64, active threads = 0, queued tasks = 0, completed tasks = 203]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2081)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:841)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1376)
+	at scala.concurrent.impl.ExecutionContextImpl.execute(ExecutionContextImpl.scala:21)
+	at scala.concurrent.impl.Promise$Transformation.submitWithValue(Promise.scala:429)
+	at scala.concurrent.impl.Promise$DefaultPromise.submitWithValue(Promise.scala:338)
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete0(Promise.scala:285)
+	at scala.concurrent.impl.Promise$Transformation.handleFailure(Promise.scala:444)
+	at scala.concurrent.impl.Promise$Transformation.submitWithValue(Promise.scala:435)
+	at scala.concurrent.impl.Promise$DefaultPromise.submitWithValue(Promise.scala:338)
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete0(Promise.scala:285)
+	at scala.concurrent.impl.Promise$Transformation.handleFailure(Promise.scala:444)
+	at scala.concurrent.impl.Promise$Transformation.submitWithValue(Promise.scala:435)
+	at scala.concurrent.impl.Promise$DefaultPromise.submitWithValue(Promise.scala:338)
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete0(Promise.scala:285)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:504)
+	at org.apache.spark.util.ThreadUtils$$anon$1.execute(ThreadUtils.scala:99)
+	at scala.concurrent.impl.ExecutionContextImpl.execute(ExecutionContextImpl.scala:21)
+	at scala.concurrent.impl.Promise$Transformation.submitWithValue(Promise.scala:429)
+	at scala.concurrent.impl.Promise$DefaultPromise.submitWithValue(Promise.scala:338)
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete0(Promise.scala:285)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:504)
+	at scala.concurrent.ExecutionContext$parasitic$.execute(ExecutionContext.scala:222)
+	at scala.concurrent.impl.Promise$Transformation.submitWithValue(Promise.scala:429)
+	at scala.concurrent.impl.Promise$DefaultPromise.submitWithValue(Promise.scala:335)
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete0(Promise.scala:285)
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:278)
+	at scala.concurrent.Promise.tryFailure(Promise.scala:117)
+	at scala.concurrent.Promise.tryFailure$(Promise.scala:117)
+	at scala.concurrent.impl.Promise$DefaultPromise.tryFailure(Promise.scala:104)
+	at org.apache.spark.rpc.netty.NettyRpcEnv.org$apache$spark$rpc$netty$NettyRpcEnv$$onFailure$1(NettyRpcEnv.scala:217)
+	at org.apache.spark.rpc.netty.NettyRpcEnv.$anonfun$askAbortable$6(NettyRpcEnv.scala:248)
+	at org.apache.spark.rpc.netty.NettyRpcEnv.$anonfun$askAbortable$6$adapted(NettyRpcEnv.scala:248)
+	at org.apache.spark.rpc.netty.RpcOutboxMessage.onFailure(Outbox.scala:86)
+	at org.apache.spark.network.client.TransportResponseHandler.failOutstandingRequests(TransportResponseHandler.java:121)
+	at org.apache.spark.network.client.TransportResponseHandler.channelInactive(TransportResponseHandler.java:151)
+	at org.apache.spark.network.server.TransportChannelHandler.channelInactive(TransportChannelHandler.java:120)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:303)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:281)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:274)
+	at io.netty.channel.ChannelInboundHandlerAdapter.channelInactive(ChannelInboundHandlerAdapter.java:81)
+	at io.netty.handler.timeout.IdleStateHandler.channelInactive(IdleStateHandler.java:280)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:303)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:281)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:274)
+	at io.netty.channel.ChannelInboundHandlerAdapter.channelInactive(ChannelInboundHandlerAdapter.java:81)
+	at org.apache.spark.network.util.TransportFrameDecoder.channelInactive(TransportFrameDecoder.java:225)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:303)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:281)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:274)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelInactive(DefaultChannelPipeline.java:1352)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:301)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:281)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelInactive(DefaultChannelPipeline.java:850)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe$7.run(AbstractChannel.java:811)
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:173)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:166)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasksFrom(SingleThreadEventExecutor.java:428)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:377)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.confirmShutdown(SingleThreadEventExecutor.java:763)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:592)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:998)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Picked up JAVA_TOOL_OPTIONS: -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Djavax.net.ssl.trustStoreType=JKS -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=36843 -Dhttp.nonProxyHosts=localhost|127.0.0.1|::1|127.*|0.*|::|169.254.*|api.anthropic.com|api-staging.anthropic.com|api-pr-preview.anthropic.com|mcp-proxy.anthropic.com|mcp-proxy-staging.anthropic.com|registry.npmjs.org|jsr.io|npm.jsr.io|pypi.org|files.pythonhosted.org|index.crates.io|proxy.golang.org|host.docker.internal|10.*|172.16.*|172.17.*|172.18.*|172.19.*|172.20.*|172.21.*|172.22.*|172.23.*|172.24.*|172.25.*|172.26.*|172.27.*|172.28.*|172.29.*|172.30.*|172.31.*|192.168.*|100.64.0.0/10|*.svc.cluster.local|*.svc.cluster.local -Djdk.http.auth.tunneling.disabledSchemes= -Djdk.http.auth.proxying.disabledSchemes=
+Picked up _JAVA_OPTIONS: -XX:+UnlockDiagnosticVMOptions -XX:DisableIntrinsic=_base64_encodeBlock,_base64_decodeBlock
+Picked up JAVA_TOOL_OPTIONS: -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Djavax.net.ssl.trustStoreType=JKS -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=36843 -Dhttp.nonProxyHosts=localhost|127.0.0.1|::1|127.*|0.*|::|169.254.*|api.anthropic.com|api-staging.anthropic.com|api-pr-preview.anthropic.com|mcp-proxy.anthropic.com|mcp-proxy-staging.anthropic.com|registry.npmjs.org|jsr.io|npm.jsr.io|pypi.org|files.pythonhosted.org|index.crates.io|proxy.golang.org|host.docker.internal|10.*|172.16.*|172.17.*|172.18.*|172.19.*|172.20.*|172.21.*|172.22.*|172.23.*|172.24.*|172.25.*|172.26.*|172.27.*|172.28.*|172.29.*|172.30.*|172.31.*|192.168.*|100.64.0.0/10|*.svc.cluster.local|*.svc.cluster.local -Djdk.http.auth.tunneling.disabledSchemes= -Djdk.http.auth.proxying.disabledSchemes=
+Picked up _JAVA_OPTIONS: -XX:+UnlockDiagnosticVMOptions -XX:DisableIntrinsic=_base64_encodeBlock,_base64_decodeBlock
+WARNING: Using incubator modules: jdk.incubator.vector
+Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
+26/11/24 15:16:17 WARN Utils: Your hostname, vm, resolves to a loopback address: 127.0.0.1; using 192.0.2.2 instead (on interface eth0)
+26/11/24 15:16:17 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+26/11/24 15:16:18 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[15:16:25] r1 2x1 n=1024: cluster 5.9 s, application 9.4 s
+[15:16:29] r1 D 2x1 rowblock P=8  n=1024  rep=0 e2e    3.210 s job    3.046 crit-kernel    0.614 valid=yes
+[15:16:30] r1 D 2x1 rowblock P=8  n=1024  rep=1 e2e    1.197 s job    1.167 crit-kernel    0.454 valid=yes
+[15:16:32] r1 D 2x1 rowblock P=8  n=1024  rep=2 e2e    0.982 s job    0.949 crit-kernel    0.356 valid=yes
+[15:16:33] r1 D 2x1 rowblock P=8  n=1024  rep=3 e2e    0.935 s job    0.896 crit-kernel    0.349 valid=yes
+[15:16:34] r1 D 2x1 rowblock P=8  n=1024  rep=4 e2e    0.950 s job    0.919 crit-kernel    0.406 valid=yes
+[15:16:35] r1 D 2x1 rowblock P=8  n=1024  rep=5 e2e    0.813 s job    0.784 crit-kernel    0.340 valid=yes
+[15:16:38] r1 D 2x1 block2d  P=2  n=1024  rep=0 e2e    3.162 s job    3.160 crit-kernel    0.395 valid=yes
+[15:16:40] r1 D 2x1 block2d  P=2  n=1024  rep=1 e2e    2.135 s job    2.132 crit-kernel    0.221 valid=yes
+[15:16:42] r1 D 2x1 block2d  P=2  n=1024  rep=2 e2e    1.803 s job    1.802 crit-kernel    0.246 valid=yes
+[15:16:44] r1 D 2x1 block2d  P=2  n=1024  rep=3 e2e    1.517 s job    1.516 crit-kernel    0.273 valid=yes
+[15:16:46] r1 D 2x1 block2d  P=2  n=1024  rep=4 e2e    1.597 s job    1.596 crit-kernel    0.223 valid=yes
+[15:16:48] r1 D 2x1 block2d  P=2  n=1024  rep=5 e2e    1.583 s job    1.581 crit-kernel    0.246 valid=yes
+Picked up JAVA_TOOL_OPTIONS: -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Djavax.net.ssl.trustStoreType=JKS -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=36843 -Dhttp.nonProxyHosts=localhost|127.0.0.1|::1|127.*|0.*|::|169.254.*|api.anthropic.com|api-staging.anthropic.com|api-pr-preview.anthropic.com|mcp-proxy.anthropic.com|mcp-proxy-staging.anthropic.com|registry.npmjs.org|jsr.io|npm.jsr.io|pypi.org|files.pythonhosted.org|index.crates.io|proxy.golang.org|host.docker.internal|10.*|172.16.*|172.17.*|172.18.*|172.19.*|172.20.*|172.21.*|172.22.*|172.23.*|172.24.*|172.25.*|172.26.*|172.27.*|172.28.*|172.29.*|172.30.*|172.31.*|192.168.*|100.64.0.0/10|*.svc.cluster.local|*.svc.cluster.local -Djdk.http.auth.tunneling.disabledSchemes= -Djdk.http.auth.proxying.disabledSchemes=
+Picked up _JAVA_OPTIONS: -XX:+UnlockDiagnosticVMOptions -XX:DisableIntrinsic=_base64_encodeBlock,_base64_decodeBlock
+Picked up JAVA_TOOL_OPTIONS: -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Djavax.net.ssl.trustStoreType=JKS -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=36843 -Dhttp.nonProxyHosts=localhost|127.0.0.1|::1|127.*|0.*|::|169.254.*|api.anthropic.com|api-staging.anthropic.com|api-pr-preview.anthropic.com|mcp-proxy.anthropic.com|mcp-proxy-staging.anthropic.com|registry.npmjs.org|jsr.io|npm.jsr.io|pypi.org|files.pythonhosted.org|index.crates.io|proxy.golang.org|host.docker.internal|10.*|172.16.*|172.17.*|172.18.*|172.19.*|172.20.*|172.21.*|172.22.*|172.23.*|172.24.*|172.25.*|172.26.*|172.27.*|172.28.*|172.29.*|172.30.*|172.31.*|192.168.*|100.64.0.0/10|*.svc.cluster.local|*.svc.cluster.local -Djdk.http.auth.tunneling.disabledSchemes= -Djdk.http.auth.proxying.disabledSchemes=
+Picked up _JAVA_OPTIONS: -XX:+UnlockDiagnosticVMOptions -XX:DisableIntrinsic=_base64_encodeBlock,_base64_decodeBlock
+WARNING: Using incubator modules: jdk.incubator.vector
+Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
+26/11/24 15:16:57 WARN Utils: Your hostname, vm, resolves to a loopback address: 127.0.0.1; using 192.0.2.2 instead (on interface eth0)
+26/11/24 15:16:57 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+26/11/24 15:16:57 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[15:17:06] r1 2x1 n=2048: cluster 6.1 s, application 10.4 s
+[15:17:12] r1 D 2x1 rowblock P=8  n=2048  rep=0 e2e    5.797 s job    5.604 crit-kernel    2.428 valid=yes
+[15:17:16] r1 D 2x1 rowblock P=8  n=2048  rep=1 e2e    3.202 s job    3.130 crit-kernel    2.016 valid=yes
+[15:17:20] r1 D 2x1 rowblock P=8  n=2048  rep=2 e2e    3.541 s job    3.458 crit-kernel    2.366 valid=yes
+[15:17:23] r1 D 2x1 rowblock P=8  n=2048  rep=3 e2e    3.249 s job    3.160 crit-kernel    2.253 valid=yes
+[15:17:27] r1 D 2x1 rowblock P=8  n=2048  rep=4 e2e    3.620 s job    3.503 crit-kernel    2.404 valid=yes
+[15:17:31] r1 D 2x1 rowblock P=8  n=2048  rep=5 e2e    3.300 s job    3.225 crit-kernel    2.314 valid=yes
+[15:17:37] r1 D 2x1 block2d  P=2  n=2048  rep=0 e2e    5.720 s job    5.708 crit-kernel    1.899 valid=yes
+[15:17:42] r1 D 2x1 block2d  P=2  n=2048  rep=1 e2e    4.893 s job    4.883 crit-kernel    1.526 valid=yes
+[15:17:46] r1 D 2x1 block2d  P=2  n=2048  rep=2 e2e    3.963 s job    3.957 crit-kernel    1.064 valid=yes
+[15:17:50] r1 D 2x1 block2d  P=2  n=2048  rep=3 e2e    3.962 s job    3.956 crit-kernel    1.684 valid=yes
+[15:17:54] r1 D 2x1 block2d  P=2  n=2048  rep=4 e2e    4.138 s job    4.129 crit-kernel    1.654 valid=yes
+[15:17:59] r1 D 2x1 block2d  P=2  n=2048  rep=5 e2e    4.056 s job    4.049 crit-kernel    1.311 valid=yes
+[15:18:02] r1 G 2x1 rowblock P=2  n=2048  rep=0 e2e    3.085 s job    3.005 crit-kernel    2.407 valid=yes
+[15:18:05] r1 G 2x1 rowblock P=2  n=2048  rep=1 e2e    2.843 s job    2.770 crit-kernel    2.201 valid=yes
+[15:18:08] r1 G 2x1 rowblock P=2  n=2048  rep=2 e2e    3.011 s job    2.943 crit-kernel    2.413 valid=yes
+[15:18:11] r1 G 2x1 rowblock P=2  n=2048  rep=3 e2e    2.912 s job    2.838 crit-kernel    2.338 valid=yes
+[15:18:14] r1 G 2x1 rowblock P=2  n=2048  rep=4 e2e    2.850 s job    2.785 crit-kernel    2.275 valid=yes
+[15:18:17] r1 G 2x1 rowblock P=2  n=2048  rep=5 e2e    2.534 s job    2.479 crit-kernel    1.937 valid=yes
+[15:18:20] r1 G 2x1 rowblock P=4  n=2048  rep=0 e2e    2.795 s job    2.731 crit-kernel    1.075 valid=yes
+[15:18:23] r1 G 2x1 rowblock P=4  n=2048  rep=1 e2e    2.946 s job    2.894 crit-kernel    1.239 valid=yes
+[15:18:26] r1 G 2x1 rowblock P=4  n=2048  rep=2 e2e    2.843 s job    2.767 crit-kernel    1.124 valid=yes
+[15:18:29] r1 G 2x1 rowblock P=4  n=2048  rep=3 e2e    2.748 s job    2.683 crit-kernel    1.138 valid=yes
+[15:18:32] r1 G 2x1 rowblock P=4  n=2048  rep=4 e2e    2.823 s job    2.746 crit-kernel    1.115 valid=yes
+[15:18:36] r1 G 2x1 rowblock P=4  n=2048  rep=5 e2e    3.197 s job    3.134 crit-kernel    1.389 valid=yes
+[15:18:40] r1 G 2x1 rowblock P=32 n=2048  rep=0 e2e    3.670 s job    3.615 crit-kernel    1.345 valid=yes
+[15:18:43] r1 G 2x1 rowblock P=32 n=2048  rep=1 e2e    3.464 s job    3.406 crit-kernel    1.403 valid=yes
+[15:18:47] r1 G 2x1 rowblock P=32 n=2048  rep=2 e2e    3.352 s job    3.298 crit-kernel    1.164 valid=yes
+[15:18:50] r1 G 2x1 rowblock P=32 n=2048  rep=3 e2e    3.217 s job    3.160 crit-kernel    1.195 valid=yes
+[15:18:54] r1 G 2x1 rowblock P=32 n=2048  rep=4 e2e    3.147 s job    3.080 crit-kernel    1.179 valid=yes
+[15:18:57] r1 G 2x1 rowblock P=32 n=2048  rep=5 e2e    3.316 s job    3.257 crit-kernel    1.331 valid=yes
+[15:19:01] r1 G 2x1 rowblock P=64 n=2048  rep=0 e2e    3.634 s job    3.544 crit-kernel    1.245 valid=yes
+[15:19:05] r1 G 2x1 rowblock P=64 n=2048  rep=1 e2e    3.490 s job    3.435 crit-kernel    1.226 valid=yes
+[15:19:08] r1 G 2x1 rowblock P=64 n=2048  rep=2 e2e    3.451 s job    3.369 crit-kernel    1.167 valid=yes
+[15:19:12] r1 G 2x1 rowblock P=64 n=2048  rep=3 e2e    3.360 s job    3.305 crit-kernel    1.227 valid=yes
+[15:19:16] r1 G 2x1 rowblock P=64 n=2048  rep=4 e2e    3.336 s job    3.283 crit-kernel    1.183 valid=yes
+[15:19:20] r1 G 2x1 rowblock P=64 n=2048  rep=5 e2e    4.140 s job    4.079 crit-kernel    1.454 valid=yes
+Picked up JAVA_TOOL_OPTIONS: -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Djavax.net.ssl.trustStoreType=JKS -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=36843 -Dhttp.nonProxyHosts=localhost|127.0.0.1|::1|127.*|0.*|::|169.254.*|api.anthropic.com|api-staging.anthropic.com|api-pr-preview.anthropic.com|mcp-proxy.anthropic.com|mcp-proxy-staging.anthropic.com|registry.npmjs.org|jsr.io|npm.jsr.io|pypi.org|files.pythonhosted.org|index.crates.io|proxy.golang.org|host.docker.internal|10.*|172.16.*|172.17.*|172.18.*|172.19.*|172.20.*|172.21.*|172.22.*|172.23.*|172.24.*|172.25.*|172.26.*|172.27.*|172.28.*|172.29.*|172.30.*|172.31.*|192.168.*|100.64.0.0/10|*.svc.cluster.local|*.svc.cluster.local -Djdk.http.auth.tunneling.disabledSchemes= -Djdk.http.auth.proxying.disabledSchemes=
+Picked up _JAVA_OPTIONS: -XX:+UnlockDiagnosticVMOptions -XX:DisableIntrinsic=_base64_encodeBlock,_base64_decodeBlock
+Picked up JAVA_TOOL_OPTIONS: -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Djavax.net.ssl.trustStoreType=JKS -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=36843 -Dhttp.nonProxyHosts=localhost|127.0.0.1|::1|127.*|0.*|::|169.254.*|api.anthropic.com|api-staging.anthropic.com|api-pr-preview.anthropic.com|mcp-proxy.anthropic.com|mcp-proxy-staging.anthropic.com|registry.npmjs.org|jsr.io|npm.jsr.io|pypi.org|files.pythonhosted.org|index.crates.io|proxy.golang.org|host.docker.internal|10.*|172.16.*|172.17.*|172.18.*|172.19.*|172.20.*|172.21.*|172.22.*|172.23.*|172.24.*|172.25.*|172.26.*|172.27.*|172.28.*|172.29.*|172.30.*|172.31.*|192.168.*|100.64.0.0/10|*.svc.cluster.local|*.svc.cluster.local -Djdk.http.auth.tunneling.disabledSchemes= -Djdk.http.auth.proxying.disabledSchemes=
+Picked up _JAVA_OPTIONS: -XX:+UnlockDiagnosticVMOptions -XX:DisableIntrinsic=_base64_encodeBlock,_base64_decodeBlock
+WARNING: Using incubator modules: jdk.incubator.vector
+Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
+26/11/24 15:19:29 WARN Utils: Your hostname, vm, resolves to a loopback address: 127.0.0.1; using 192.0.2.2 instead (on interface eth0)
+26/11/24 15:19:29 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+26/11/24 15:19:29 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[15:19:37] r1 2x1 n=3072: cluster 5.9 s, application 9.8 s
+[15:19:50] r1 D 2x1 rowblock P=8  n=3072  rep=0 e2e   11.760 s job   11.477 crit-kernel    7.277 valid=yes
+[15:20:01] r1 D 2x1 rowblock P=8  n=3072  rep=1 e2e   10.363 s job   10.177 crit-kernel    8.224 valid=yes
+[15:20:09] r1 D 2x1 rowblock P=8  n=3072  rep=2 e2e    8.481 s job    8.343 crit-kernel    6.495 valid=yes
+[15:20:19] r1 D 2x1 rowblock P=8  n=3072  rep=3 e2e    9.142 s job    9.006 crit-kernel    7.512 valid=yes
+[15:20:30] r1 D 2x1 block2d  P=2  n=3072  rep=0 e2e   11.343 s job   11.319 crit-kernel    4.978 valid=yes
+[15:20:41] r1 D 2x1 block2d  P=2  n=3072  rep=1 e2e   10.464 s job   10.434 crit-kernel    5.249 valid=yes
+[15:20:51] r1 D 2x1 block2d  P=2  n=3072  rep=2 e2e    9.637 s job    9.619 crit-kernel    4.842 valid=yes
+[15:21:02] r1 D 2x1 block2d  P=2  n=3072  rep=3 e2e   10.644 s job   10.617 crit-kernel    5.585 valid=yes
+Picked up JAVA_TOOL_OPTIONS: -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Djavax.net.ssl.trustStoreType=JKS -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=36843 -Dhttp.nonProxyHosts=localhost|127.0.0.1|::1|127.*|0.*|::|169.254.*|api.anthropic.com|api-staging.anthropic.com|api-pr-preview.anthropic.com|mcp-proxy.anthropic.com|mcp-proxy-staging.anthropic.com|registry.npmjs.org|jsr.io|npm.jsr.io|pypi.org|files.pythonhosted.org|index.crates.io|proxy.golang.org|host.docker.internal|10.*|172.16.*|172.17.*|172.18.*|172.19.*|172.20.*|172.21.*|172.22.*|172.23.*|172.24.*|172.25.*|172.26.*|172.27.*|172.28.*|172.29.*|172.30.*|172.31.*|192.168.*|100.64.0.0/10|*.svc.cluster.local|*.svc.cluster.local -Djdk.http.auth.tunneling.disabledSchemes= -Djdk.http.auth.proxying.disabledSchemes=
+Picked up _JAVA_OPTIONS: -XX:+UnlockDiagnosticVMOptions -XX:DisableIntrinsic=_base64_encodeBlock,_base64_decodeBlock
+Picked up JAVA_TOOL_OPTIONS: -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Djavax.net.ssl.trustStoreType=JKS -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=36843 -Dhttp.nonProxyHosts=localhost|127.0.0.1|::1|127.*|0.*|::|169.254.*|api.anthropic.com|api-staging.anthropic.com|api-pr-preview.anthropic.com|mcp-proxy.anthropic.com|mcp-proxy-staging.anthropic.com|registry.npmjs.org|jsr.io|npm.jsr.io|pypi.org|files.pythonhosted.org|index.crates.io|proxy.golang.org|host.docker.internal|10.*|172.16.*|172.17.*|172.18.*|172.19.*|172.20.*|172.21.*|172.22.*|172.23.*|172.24.*|172.25.*|172.26.*|172.27.*|172.28.*|172.29.*|172.30.*|172.31.*|192.168.*|100.64.0.0/10|*.svc.cluster.local|*.svc.cluster.local -Djdk.http.auth.tunneling.disabledSchemes= -Djdk.http.auth.proxying.disabledSchemes=
+Picked up _JAVA_OPTIONS: -XX:+UnlockDiagnosticVMOptions -XX:DisableIntrinsic=_base64_encodeBlock,_base64_decodeBlock
+WARNING: Using incubator modules: jdk.incubator.vector
+Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
+26/11/24 15:21:14 WARN Utils: Your hostname, vm, resolves to a loopback address: 127.0.0.1; using 192.0.2.2 instead (on interface eth0)
+26/11/24 15:21:14 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+26/11/24 15:21:15 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[15:21:27] r1 4x1 n=1024: cluster 9.2 s, application 13.6 s
+[15:21:32] r1 D 4x1 rowblock P=8  n=1024  rep=0 e2e    4.874 s job    4.762 crit-kernel    0.759 valid=yes
+[15:21:33] r1 D 4x1 rowblock P=8  n=1024  rep=1 e2e    1.202 s job    1.160 crit-kernel    0.522 valid=yes
+[15:21:35] r1 D 4x1 rowblock P=8  n=1024  rep=2 e2e    1.312 s job    1.275 crit-kernel    0.489 valid=yes
+[15:21:37] r1 D 4x1 rowblock P=8  n=1024  rep=3 e2e    1.281 s job    1.238 crit-kernel    0.544 valid=yes
+[15:21:38] r1 D 4x1 rowblock P=8  n=1024  rep=4 e2e    1.293 s job    1.259 crit-kernel    0.615 valid=yes
+[15:21:39] r1 D 4x1 rowblock P=8  n=1024  rep=5 e2e    1.069 s job    1.024 crit-kernel    0.452 valid=yes
+Picked up JAVA_TOOL_OPTIONS: -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Djavax.net.ssl.trustStoreType=JKS -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=36843 -Dhttp.nonProxyHosts=localhost|127.0.0.1|::1|127.*|0.*|::|169.254.*|api.anthropic.com|api-staging.anthropic.com|api-pr-preview.anthropic.com|mcp-proxy.anthropic.com|mcp-proxy-staging.anthropic.com|registry.npmjs.org|jsr.io|npm.jsr.io|pypi.org|files.pythonhosted.org|index.crates.io|proxy.golang.org|host.docker.internal|10.*|172.16.*|172.17.*|172.18.*|172.19.*|172.20.*|172.21.*|172.22.*|172.23.*|172.24.*|172.25.*|172.26.*|172.27.*|172.28.*|172.29.*|172.30.*|172.31.*|192.168.*|100.64.0.0/10|*.svc.cluster.local|*.svc.cluster.local -Djdk.http.auth.tunneling.disabledSchemes= -Djdk.http.auth.proxying.disabledSchemes=
+Picked up _JAVA_OPTIONS: -XX:+UnlockDiagnosticVMOptions -XX:DisableIntrinsic=_base64_encodeBlock,_base64_decodeBlock
+Picked up JAVA_TOOL_OPTIONS: -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Djavax.net.ssl.trustStoreType=JKS -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=36843 -Dhttp.nonProxyHosts=localhost|127.0.0.1|::1|127.*|0.*|::|169.254.*|api.anthropic.com|api-staging.anthropic.com|api-pr-preview.anthropic.com|mcp-proxy.anthropic.com|mcp-proxy-staging.anthropic.com|registry.npmjs.org|jsr.io|npm.jsr.io|pypi.org|files.pythonhosted.org|index.crates.io|proxy.golang.org|host.docker.internal|10.*|172.16.*|172.17.*|172.18.*|172.19.*|172.20.*|172.21.*|172.22.*|172.23.*|172.24.*|172.25.*|172.26.*|172.27.*|172.28.*|172.29.*|172.30.*|172.31.*|192.168.*|100.64.0.0/10|*.svc.cluster.local|*.svc.cluster.local -Djdk.http.auth.tunneling.disabledSchemes= -Djdk.http.auth.proxying.disabledSchemes=
+Picked up _JAVA_OPTIONS: -XX:+UnlockDiagnosticVMOptions -XX:DisableIntrinsic=_base64_encodeBlock,_base64_decodeBlock
+WARNING: Using incubator modules: jdk.incubator.vector
+Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
+26/11/24 15:21:51 WARN Utils: Your hostname, vm, resolves to a loopback address: 127.0.0.1; using 192.0.2.2 instead (on interface eth0)
+26/11/24 15:21:51 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+26/11/24 15:21:52 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[15:22:03] r1 4x1 n=2048: cluster 9.2 s, application 13.0 s
+[15:22:12] r1 D 4x1 rowblock P=8  n=2048  rep=0 e2e    7.566 s job    7.359 crit-kernel    2.473 valid=yes
+[15:22:16] r1 D 4x1 rowblock P=8  n=2048  rep=1 e2e    4.021 s job    3.911 crit-kernel    2.409 valid=yes
+[15:22:20] r1 D 4x1 rowblock P=8  n=2048  rep=2 e2e    3.703 s job    3.615 crit-kernel    2.630 valid=yes
+[15:22:24] r1 D 4x1 rowblock P=8  n=2048  rep=3 e2e    3.331 s job    3.226 crit-kernel    2.155 valid=yes
+[15:22:27] r1 D 4x1 rowblock P=8  n=2048  rep=4 e2e    3.349 s job    3.259 crit-kernel    2.284 valid=yes
+[15:22:31] r1 D 4x1 rowblock P=8  n=2048  rep=5 e2e    3.345 s job    3.213 crit-kernel    2.258 valid=yes
+[15:22:33] r1 4x1 n=3072: NOT RUN (memory budget)
+Picked up JAVA_TOOL_OPTIONS: -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Djavax.net.ssl.trustStoreType=JKS -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=36843 -Dhttp.nonProxyHosts=localhost|127.0.0.1|::1|127.*|0.*|::|169.254.*|api.anthropic.com|api-staging.anthropic.com|api-pr-preview.anthropic.com|mcp-proxy.anthropic.com|mcp-proxy-staging.anthropic.com|registry.npmjs.org|jsr.io|npm.jsr.io|pypi.org|files.pythonhosted.org|index.crates.io|proxy.golang.org|host.docker.internal|10.*|172.16.*|172.17.*|172.18.*|172.19.*|172.20.*|172.21.*|172.22.*|172.23.*|172.24.*|172.25.*|172.26.*|172.27.*|172.28.*|172.29.*|172.30.*|172.31.*|192.168.*|100.64.0.0/10|*.svc.cluster.local|*.svc.cluster.local -Djdk.http.auth.tunneling.disabledSchemes= -Djdk.http.auth.proxying.disabledSchemes=
+Picked up _JAVA_OPTIONS: -XX:+UnlockDiagnosticVMOptions -XX:DisableIntrinsic=_base64_encodeBlock,_base64_decodeBlock
+Picked up JAVA_TOOL_OPTIONS: -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Djavax.net.ssl.trustStoreType=JKS -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=36843 -Dhttp.nonProxyHosts=localhost|127.0.0.1|::1|127.*|0.*|::|169.254.*|api.anthropic.com|api-staging.anthropic.com|api-pr-preview.anthropic.com|mcp-proxy.anthropic.com|mcp-proxy-staging.anthropic.com|registry.npmjs.org|jsr.io|npm.jsr.io|pypi.org|files.pythonhosted.org|index.crates.io|proxy.golang.org|host.docker.internal|10.*|172.16.*|172.17.*|172.18.*|172.19.*|172.20.*|172.21.*|172.22.*|172.23.*|172.24.*|172.25.*|172.26.*|172.27.*|172.28.*|172.29.*|172.30.*|172.31.*|192.168.*|100.64.0.0/10|*.svc.cluster.local|*.svc.cluster.local -Djdk.http.auth.tunneling.disabledSchemes= -Djdk.http.auth.proxying.disabledSchemes=
+Picked up _JAVA_OPTIONS: -XX:+UnlockDiagnosticVMOptions -XX:DisableIntrinsic=_base64_encodeBlock,_base64_decodeBlock
+WARNING: Using incubator modules: jdk.incubator.vector
+Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
+26/11/24 15:22:38 WARN Utils: Your hostname, vm, resolves to a loopback address: 127.0.0.1; using 192.0.2.2 instead (on interface eth0)
+26/11/24 15:22:38 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+26/11/24 15:22:38 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[15:22:44] r1 1x2 n=1024: cluster 3.8 s, application 7.2 s
+[15:22:47] r1 D 1x2 rowblock P=8  n=1024  rep=0 e2e    2.345 s job    2.217 crit-kernel    0.428 valid=yes
+[15:22:48] r1 D 1x2 rowblock P=8  n=1024  rep=1 e2e    0.962 s job    0.921 crit-kernel    0.390 valid=yes
+[15:22:49] r1 D 1x2 rowblock P=8  n=1024  rep=2 e2e    0.900 s job    0.861 crit-kernel    0.409 valid=yes
+[15:22:50] r1 D 1x2 rowblock P=8  n=1024  rep=3 e2e    0.961 s job    0.927 crit-kernel    0.410 valid=yes
+[15:22:51] r1 D 1x2 rowblock P=8  n=1024  rep=4 e2e    0.750 s job    0.720 crit-kernel    0.346 valid=yes
+[15:22:52] r1 D 1x2 rowblock P=8  n=1024  rep=5 e2e    0.809 s job    0.776 crit-kernel    0.367 valid=yes
+Picked up JAVA_TOOL_OPTIONS: -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Djavax.net.ssl.trustStoreType=JKS -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=36843 -Dhttp.nonProxyHosts=localhost|127.0.0.1|::1|127.*|0.*|::|169.254.*|api.anthropic.com|api-staging.anthropic.com|api-pr-preview.anthropic.com|mcp-proxy.anthropic.com|mcp-proxy-staging.anthropic.com|registry.npmjs.org|jsr.io|npm.jsr.io|pypi.org|files.pythonhosted.org|index.crates.io|proxy.golang.org|host.docker.internal|10.*|172.16.*|172.17.*|172.18.*|172.19.*|172.20.*|172.21.*|172.22.*|172.23.*|172.24.*|172.25.*|172.26.*|172.27.*|172.28.*|172.29.*|172.30.*|172.31.*|192.168.*|100.64.0.0/10|*.svc.cluster.local|*.svc.cluster.local -Djdk.http.auth.tunneling.disabledSchemes= -Djdk.http.auth.proxying.disabledSchemes=
+Picked up _JAVA_OPTIONS: -XX:+UnlockDiagnosticVMOptions -XX:DisableIntrinsic=_base64_encodeBlock,_base64_decodeBlock
+Picked up JAVA_TOOL_OPTIONS: -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Djavax.net.ssl.trustStoreType=JKS -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=36843 -Dhttp.nonProxyHosts=localhost|127.0.0.1|::1|127.*|0.*|::|169.254.*|api.anthropic.com|api-staging.anthropic.com|api-pr-preview.anthropic.com|mcp-proxy.anthropic.com|mcp-proxy-staging.anthropic.com|registry.npmjs.org|jsr.io|npm.jsr.io|pypi.org|files.pythonhosted.org|index.crates.io|proxy.golang.org|host.docker.internal|10.*|172.16.*|172.17.*|172.18.*|172.19.*|172.20.*|172.21.*|172.22.*|172.23.*|172.24.*|172.25.*|172.26.*|172.27.*|172.28.*|172.29.*|172.30.*|172.31.*|192.168.*|100.64.0.0/10|*.svc.cluster.local|*.svc.cluster.local -Djdk.http.auth.tunneling.disabledSchemes= -Djdk.http.auth.proxying.disabledSchemes=
+Picked up _JAVA_OPTIONS: -XX:+UnlockDiagnosticVMOptions -XX:DisableIntrinsic=_base64_encodeBlock,_base64_decodeBlock
+WARNING: Using incubator modules: jdk.incubator.vector
+Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
+26/11/24 15:22:58 WARN Utils: Your hostname, vm, resolves to a loopback address: 127.0.0.1; using 192.0.2.2 instead (on interface eth0)
+26/11/24 15:22:58 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+26/11/24 15:22:59 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[15:23:04] r1 1x2 n=2048: cluster 3.8 s, application 7.0 s
+[15:23:09] r1 D 1x2 rowblock P=8  n=2048  rep=0 e2e    4.614 s job    4.441 crit-kernel    2.247 valid=yes
+[15:23:13] r1 D 1x2 rowblock P=8  n=2048  rep=1 e2e    3.307 s job    3.249 crit-kernel    2.319 valid=yes
+[15:23:16] r1 D 1x2 rowblock P=8  n=2048  rep=2 e2e    2.765 s job    2.706 crit-kernel    2.026 valid=yes
+[15:23:19] r1 D 1x2 rowblock P=8  n=2048  rep=3 e2e    3.145 s job    3.034 crit-kernel    2.319 valid=yes
+[15:23:22] r1 D 1x2 rowblock P=8  n=2048  rep=4 e2e    3.159 s job    3.095 crit-kernel    2.476 valid=yes
+[15:23:25] r1 D 1x2 rowblock P=8  n=2048  rep=5 e2e    2.680 s job    2.586 crit-kernel    2.048 valid=yes
+Picked up JAVA_TOOL_OPTIONS: -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Djavax.net.ssl.trustStoreType=JKS -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=36843 -Dhttp.nonProxyHosts=localhost|127.0.0.1|::1|127.*|0.*|::|169.254.*|api.anthropic.com|api-staging.anthropic.com|api-pr-preview.anthropic.com|mcp-proxy.anthropic.com|mcp-proxy-staging.anthropic.com|registry.npmjs.org|jsr.io|npm.jsr.io|pypi.org|files.pythonhosted.org|index.crates.io|proxy.golang.org|host.docker.internal|10.*|172.16.*|172.17.*|172.18.*|172.19.*|172.20.*|172.21.*|172.22.*|172.23.*|172.24.*|172.25.*|172.26.*|172.27.*|172.28.*|172.29.*|172.30.*|172.31.*|192.168.*|100.64.0.0/10|*.svc.cluster.local|*.svc.cluster.local -Djdk.http.auth.tunneling.disabledSchemes= -Djdk.http.auth.proxying.disabledSchemes=
+Picked up _JAVA_OPTIONS: -XX:+UnlockDiagnosticVMOptions -XX:DisableIntrinsic=_base64_encodeBlock,_base64_decodeBlock
+Picked up JAVA_TOOL_OPTIONS: -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Djavax.net.ssl.trustStoreType=JKS -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=36843 -Dhttp.nonProxyHosts=localhost|127.0.0.1|::1|127.*|0.*|::|169.254.*|api.anthropic.com|api-staging.anthropic.com|api-pr-preview.anthropic.com|mcp-proxy.anthropic.com|mcp-proxy-staging.anthropic.com|registry.npmjs.org|jsr.io|npm.jsr.io|pypi.org|files.pythonhosted.org|index.crates.io|proxy.golang.org|host.docker.internal|10.*|172.16.*|172.17.*|172.18.*|172.19.*|172.20.*|172.21.*|172.22.*|172.23.*|172.24.*|172.25.*|172.26.*|172.27.*|172.28.*|172.29.*|172.30.*|172.31.*|192.168.*|100.64.0.0/10|*.svc.cluster.local|*.svc.cluster.local -Djdk.http.auth.tunneling.disabledSchemes= -Djdk.http.auth.proxying.disabledSchemes=
+Picked up _JAVA_OPTIONS: -XX:+UnlockDiagnosticVMOptions -XX:DisableIntrinsic=_base64_encodeBlock,_base64_decodeBlock
+WARNING: Using incubator modules: jdk.incubator.vector
+Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
+26/11/24 15:23:32 WARN Utils: Your hostname, vm, resolves to a loopback address: 127.0.0.1; using 192.0.2.2 instead (on interface eth0)
+26/11/24 15:23:32 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+26/11/24 15:23:33 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[15:23:38] r1 1x2 n=3072: cluster 4.0 s, application 6.9 s
+[15:23:49] r1 D 1x2 rowblock P=8  n=3072  rep=0 e2e   10.184 s job    9.853 crit-kernel    6.709 valid=yes
+[15:23:57] r1 D 1x2 rowblock P=8  n=3072  rep=1 e2e    8.213 s job    8.061 crit-kernel    6.599 valid=yes
+[15:24:06] r1 D 1x2 rowblock P=8  n=3072  rep=2 e2e    8.265 s job    8.116 crit-kernel    6.898 valid=yes
+[15:24:15] r1 D 1x2 rowblock P=8  n=3072  rep=3 e2e    8.329 s job    8.179 crit-kernel    6.945 valid=yes
+[15:24:20] r2 R mm:seq p=1 n=1024 ok median 0.4522 s rss 26.0 MiB
+[15:24:22] r2 R mm:omp p=2 n=1024 ok median 0.2336 s rss 26.0 MiB
+[15:24:46] r2 R mm:seq p=1 n=2048 ok median 3.8423 s rss 98.0 MiB
+[15:24:58] r2 R mm:omp p=2 n=2048 ok median 1.9795 s rss 98.1 MiB
+[15:25:50] r2 R mm:seq p=1 n=3072 ok median 13.0911 s rss 218.0 MiB
+[15:26:17] r2 R mm:omp p=2 n=3072 ok median 6.5015 s rss 218.0 MiB
+Picked up JAVA_TOOL_OPTIONS: -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Djavax.net.ssl.trustStoreType=JKS -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=36843 -Dhttp.nonProxyHosts=localhost|127.0.0.1|::1|127.*|0.*|::|169.254.*|api.anthropic.com|api-staging.anthropic.com|api-pr-preview.anthropic.com|mcp-proxy.anthropic.com|mcp-proxy-staging.anthropic.com|registry.npmjs.org|jsr.io|npm.jsr.io|pypi.org|files.pythonhosted.org|index.crates.io|proxy.golang.org|host.docker.internal|10.*|172.16.*|172.17.*|172.18.*|172.19.*|172.20.*|172.21.*|172.22.*|172.23.*|172.24.*|172.25.*|172.26.*|172.27.*|172.28.*|172.29.*|172.30.*|172.31.*|192.168.*|100.64.0.0/10|*.svc.cluster.local|*.svc.cluster.local -Djdk.http.auth.tunneling.disabledSchemes= -Djdk.http.auth.proxying.disabledSchemes=
+Picked up _JAVA_OPTIONS: -XX:+UnlockDiagnosticVMOptions -XX:DisableIntrinsic=_base64_encodeBlock,_base64_decodeBlock
+Picked up JAVA_TOOL_OPTIONS: -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Djavax.net.ssl.trustStoreType=JKS -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=36843 -Dhttp.nonProxyHosts=localhost|127.0.0.1|::1|127.*|0.*|::|169.254.*|api.anthropic.com|api-staging.anthropic.com|api-pr-preview.anthropic.com|mcp-proxy.anthropic.com|mcp-proxy-staging.anthropic.com|registry.npmjs.org|jsr.io|npm.jsr.io|pypi.org|files.pythonhosted.org|index.crates.io|proxy.golang.org|host.docker.internal|10.*|172.16.*|172.17.*|172.18.*|172.19.*|172.20.*|172.21.*|172.22.*|172.23.*|172.24.*|172.25.*|172.26.*|172.27.*|172.28.*|172.29.*|172.30.*|172.31.*|192.168.*|100.64.0.0/10|*.svc.cluster.local|*.svc.cluster.local -Djdk.http.auth.tunneling.disabledSchemes= -Djdk.http.auth.proxying.disabledSchemes=
+Picked up _JAVA_OPTIONS: -XX:+UnlockDiagnosticVMOptions -XX:DisableIntrinsic=_base64_encodeBlock,_base64_decodeBlock
+WARNING: Using incubator modules: jdk.incubator.vector
+Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
+26/11/24 15:26:22 WARN Utils: Your hostname, vm, resolves to a loopback address: 127.0.0.1; using 192.0.2.2 instead (on interface eth0)
+26/11/24 15:26:22 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+26/11/24 15:26:22 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[15:26:28] r2 1x2 n=1024: cluster 4.3 s, application 7.4 s
+[15:26:31] r2 D 1x2 rowblock P=8  n=1024  rep=0 e2e    2.473 s job    2.367 crit-kernel    0.362 valid=yes
+[15:26:32] r2 D 1x2 rowblock P=8  n=1024  rep=1 e2e    1.025 s job    0.993 crit-kernel    0.364 valid=yes
+[15:26:33] r2 D 1x2 rowblock P=8  n=1024  rep=2 e2e    0.935 s job    0.885 crit-kernel    0.393 valid=yes
+[15:26:34] r2 D 1x2 rowblock P=8  n=1024  rep=3 e2e    0.707 s job    0.665 crit-kernel    0.309 valid=yes
+[15:26:35] r2 D 1x2 rowblock P=8  n=1024  rep=4 e2e    0.798 s job    0.766 crit-kernel    0.332 valid=yes
+[15:26:36] r2 D 1x2 rowblock P=8  n=1024  rep=5 e2e    0.848 s job    0.813 crit-kernel    0.341 valid=yes
+Picked up JAVA_TOOL_OPTIONS: -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Djavax.net.ssl.trustStoreType=JKS -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=36843 -Dhttp.nonProxyHosts=localhost|127.0.0.1|::1|127.*|0.*|::|169.254.*|api.anthropic.com|api-staging.anthropic.com|api-pr-preview.anthropic.com|mcp-proxy.anthropic.com|mcp-proxy-staging.anthropic.com|registry.npmjs.org|jsr.io|npm.jsr.io|pypi.org|files.pythonhosted.org|index.crates.io|proxy.golang.org|host.docker.internal|10.*|172.16.*|172.17.*|172.18.*|172.19.*|172.20.*|172.21.*|172.22.*|172.23.*|172.24.*|172.25.*|172.26.*|172.27.*|172.28.*|172.29.*|172.30.*|172.31.*|192.168.*|100.64.0.0/10|*.svc.cluster.local|*.svc.cluster.local -Djdk.http.auth.tunneling.disabledSchemes= -Djdk.http.auth.proxying.disabledSchemes=
+Picked up _JAVA_OPTIONS: -XX:+UnlockDiagnosticVMOptions -XX:DisableIntrinsic=_base64_encodeBlock,_base64_decodeBlock
+Picked up JAVA_TOOL_OPTIONS: -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Djavax.net.ssl.trustStoreType=JKS -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=36843 -Dhttp.nonProxyHosts=localhost|127.0.0.1|::1|127.*|0.*|::|169.254.*|api.anthropic.com|api-staging.anthropic.com|api-pr-preview.anthropic.com|mcp-proxy.anthropic.com|mcp-proxy-staging.anthropic.com|registry.npmjs.org|jsr.io|npm.jsr.io|pypi.org|files.pythonhosted.org|index.crates.io|proxy.golang.org|host.docker.internal|10.*|172.16.*|172.17.*|172.18.*|172.19.*|172.20.*|172.21.*|172.22.*|172.23.*|172.24.*|172.25.*|172.26.*|172.27.*|172.28.*|172.29.*|172.30.*|172.31.*|192.168.*|100.64.0.0/10|*.svc.cluster.local|*.svc.cluster.local -Djdk.http.auth.tunneling.disabledSchemes= -Djdk.http.auth.proxying.disabledSchemes=
+Picked up _JAVA_OPTIONS: -XX:+UnlockDiagnosticVMOptions -XX:DisableIntrinsic=_base64_encodeBlock,_base64_decodeBlock
+WARNING: Using incubator modules: jdk.incubator.vector
+Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
+26/11/24 15:26:44 WARN Utils: Your hostname, vm, resolves to a loopback address: 127.0.0.1; using 192.0.2.2 instead (on interface eth0)
+26/11/24 15:26:44 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+26/11/24 15:26:44 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[15:26:51] r2 1x2 n=2048: cluster 4.4 s, application 8.2 s
+[15:26:56] r2 D 1x2 rowblock P=8  n=2048  rep=0 e2e    5.062 s job    4.852 crit-kernel    2.257 valid=yes
+[15:26:59] r2 D 1x2 rowblock P=8  n=2048  rep=1 e2e    3.108 s job    3.043 crit-kernel    2.147 valid=yes
+[15:27:03] r2 D 1x2 rowblock P=8  n=2048  rep=2 e2e    3.726 s job    3.645 crit-kernel    2.672 valid=yes
+[15:27:07] r2 D 1x2 rowblock P=8  n=2048  rep=3 e2e    3.309 s job    3.235 crit-kernel    2.338 valid=yes
+[15:27:11] r2 D 1x2 rowblock P=8  n=2048  rep=4 e2e    3.353 s job    3.260 crit-kernel    2.525 valid=yes
+[15:27:14] r2 D 1x2 rowblock P=8  n=2048  rep=5 e2e    3.074 s job    2.980 crit-kernel    2.351 valid=yes
+Picked up JAVA_TOOL_OPTIONS: -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Djavax.net.ssl.trustStoreType=JKS -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=36843 -Dhttp.nonProxyHosts=localhost|127.0.0.1|::1|127.*|0.*|::|169.254.*|api.anthropic.com|api-staging.anthropic.com|api-pr-preview.anthropic.com|mcp-proxy.anthropic.com|mcp-proxy-staging.anthropic.com|registry.npmjs.org|jsr.io|npm.jsr.io|pypi.org|files.pythonhosted.org|index.crates.io|proxy.golang.org|host.docker.internal|10.*|172.16.*|172.17.*|172.18.*|172.19.*|172.20.*|172.21.*|172.22.*|172.23.*|172.24.*|172.25.*|172.26.*|172.27.*|172.28.*|172.29.*|172.30.*|172.31.*|192.168.*|100.64.0.0/10|*.svc.cluster.local|*.svc.cluster.local -Djdk.http.auth.tunneling.disabledSchemes= -Djdk.http.auth.proxying.disabledSchemes=
+Picked up _JAVA_OPTIONS: -XX:+UnlockDiagnosticVMOptions -XX:DisableIntrinsic=_base64_encodeBlock,_base64_decodeBlock
+Picked up JAVA_TOOL_OPTIONS: -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Djavax.net.ssl.trustStoreType=JKS -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=36843 -Dhttp.nonProxyHosts=localhost|127.0.0.1|::1|127.*|0.*|::|169.254.*|api.anthropic.com|api-staging.anthropic.com|api-pr-preview.anthropic.com|mcp-proxy.anthropic.com|mcp-proxy-staging.anthropic.com|registry.npmjs.org|jsr.io|npm.jsr.io|pypi.org|files.pythonhosted.org|index.crates.io|proxy.golang.org|host.docker.internal|10.*|172.16.*|172.17.*|172.18.*|172.19.*|172.20.*|172.21.*|172.22.*|172.23.*|172.24.*|172.25.*|172.26.*|172.27.*|172.28.*|172.29.*|172.30.*|172.31.*|192.168.*|100.64.0.0/10|*.svc.cluster.local|*.svc.cluster.local -Djdk.http.auth.tunneling.disabledSchemes= -Djdk.http.auth.proxying.disabledSchemes=
+Picked up _JAVA_OPTIONS: -XX:+UnlockDiagnosticVMOptions -XX:DisableIntrinsic=_base64_encodeBlock,_base64_decodeBlock
+WARNING: Using incubator modules: jdk.incubator.vector
+Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
+26/11/24 15:27:21 WARN Utils: Your hostname, vm, resolves to a loopback address: 127.0.0.1; using 192.0.2.2 instead (on interface eth0)
+26/11/24 15:27:21 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+26/11/24 15:27:22 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[15:27:27] r2 1x2 n=3072: cluster 4.3 s, application 7.3 s
+[15:27:38] r2 D 1x2 rowblock P=8  n=3072  rep=0 e2e   10.331 s job   10.005 crit-kernel    6.781 valid=yes
+[15:27:47] r2 D 1x2 rowblock P=8  n=3072  rep=1 e2e    8.605 s job    8.452 crit-kernel    7.103 valid=yes
+[15:27:55] r2 D 1x2 rowblock P=8  n=3072  rep=2 e2e    8.038 s job    7.865 crit-kernel    6.717 valid=yes
+[15:28:04] r2 D 1x2 rowblock P=8  n=3072  rep=3 e2e    8.016 s job    7.853 crit-kernel    6.532 valid=yes
+Picked up JAVA_TOOL_OPTIONS: -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Djavax.net.ssl.trustStoreType=JKS -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=36843 -Dhttp.nonProxyHosts=localhost|127.0.0.1|::1|127.*|0.*|::|169.254.*|api.anthropic.com|api-staging.anthropic.com|api-pr-preview.anthropic.com|mcp-proxy.anthropic.com|mcp-proxy-staging.anthropic.com|registry.npmjs.org|jsr.io|npm.jsr.io|pypi.org|files.pythonhosted.org|index.crates.io|proxy.golang.org|host.docker.internal|10.*|172.16.*|172.17.*|172.18.*|172.19.*|172.20.*|172.21.*|172.22.*|172.23.*|172.24.*|172.25.*|172.26.*|172.27.*|172.28.*|172.29.*|172.30.*|172.31.*|192.168.*|100.64.0.0/10|*.svc.cluster.local|*.svc.cluster.local -Djdk.http.auth.tunneling.disabledSchemes= -Djdk.http.auth.proxying.disabledSchemes=
+Picked up _JAVA_OPTIONS: -XX:+UnlockDiagnosticVMOptions -XX:DisableIntrinsic=_base64_encodeBlock,_base64_decodeBlock
+Picked up JAVA_TOOL_OPTIONS: -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Djavax.net.ssl.trustStoreType=JKS -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=36843 -Dhttp.nonProxyHosts=localhost|127.0.0.1|::1|127.*|0.*|::|169.254.*|api.anthropic.com|api-staging.anthropic.com|api-pr-preview.anthropic.com|mcp-proxy.anthropic.com|mcp-proxy-staging.anthropic.com|registry.npmjs.org|jsr.io|npm.jsr.io|pypi.org|files.pythonhosted.org|index.crates.io|proxy.golang.org|host.docker.internal|10.*|172.16.*|172.17.*|172.18.*|172.19.*|172.20.*|172.21.*|172.22.*|172.23.*|172.24.*|172.25.*|172.26.*|172.27.*|172.28.*|172.29.*|172.30.*|172.31.*|192.168.*|100.64.0.0/10|*.svc.cluster.local|*.svc.cluster.local -Djdk.http.auth.tunneling.disabledSchemes= -Djdk.http.auth.proxying.disabledSchemes=
+Picked up _JAVA_OPTIONS: -XX:+UnlockDiagnosticVMOptions -XX:DisableIntrinsic=_base64_encodeBlock,_base64_decodeBlock
+WARNING: Using incubator modules: jdk.incubator.vector
+Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
+26/11/24 15:28:15 WARN Utils: Your hostname, vm, resolves to a loopback address: 127.0.0.1; using 192.0.2.2 instead (on interface eth0)
+26/11/24 15:28:15 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+26/11/24 15:28:16 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[15:28:28] r2 4x1 n=1024: cluster 8.8 s, application 13.4 s
+[15:28:33] r2 D 4x1 rowblock P=8  n=1024  rep=0 e2e    5.345 s job    5.171 crit-kernel    0.658 valid=yes
+[15:28:35] r2 D 4x1 rowblock P=8  n=1024  rep=1 e2e    1.297 s job    1.249 crit-kernel    0.451 valid=yes
+[15:28:36] r2 D 4x1 rowblock P=8  n=1024  rep=2 e2e    1.155 s job    1.119 crit-kernel    0.435 valid=yes
+[15:28:38] r2 D 4x1 rowblock P=8  n=1024  rep=3 e2e    1.113 s job    1.089 crit-kernel    0.379 valid=yes
+[15:28:39] r2 D 4x1 rowblock P=8  n=1024  rep=4 e2e    1.183 s job    1.147 crit-kernel    0.543 valid=yes
+[15:28:40] r2 D 4x1 rowblock P=8  n=1024  rep=5 e2e    0.928 s job    0.897 crit-kernel    0.367 valid=yes
+Picked up JAVA_TOOL_OPTIONS: -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Djavax.net.ssl.trustStoreType=JKS -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=36843 -Dhttp.nonProxyHosts=localhost|127.0.0.1|::1|127.*|0.*|::|169.254.*|api.anthropic.com|api-staging.anthropic.com|api-pr-preview.anthropic.com|mcp-proxy.anthropic.com|mcp-proxy-staging.anthropic.com|registry.npmjs.org|jsr.io|npm.jsr.io|pypi.org|files.pythonhosted.org|index.crates.io|proxy.golang.org|host.docker.internal|10.*|172.16.*|172.17.*|172.18.*|172.19.*|172.20.*|172.21.*|172.22.*|172.23.*|172.24.*|172.25.*|172.26.*|172.27.*|172.28.*|172.29.*|172.30.*|172.31.*|192.168.*|100.64.0.0/10|*.svc.cluster.local|*.svc.cluster.local -Djdk.http.auth.tunneling.disabledSchemes= -Djdk.http.auth.proxying.disabledSchemes=
+Picked up _JAVA_OPTIONS: -XX:+UnlockDiagnosticVMOptions -XX:DisableIntrinsic=_base64_encodeBlock,_base64_decodeBlock
+Picked up JAVA_TOOL_OPTIONS: -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Djavax.net.ssl.trustStoreType=JKS -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=36843 -Dhttp.nonProxyHosts=localhost|127.0.0.1|::1|127.*|0.*|::|169.254.*|api.anthropic.com|api-staging.anthropic.com|api-pr-preview.anthropic.com|mcp-proxy.anthropic.com|mcp-proxy-staging.anthropic.com|registry.npmjs.org|jsr.io|npm.jsr.io|pypi.org|files.pythonhosted.org|index.crates.io|proxy.golang.org|host.docker.internal|10.*|172.16.*|172.17.*|172.18.*|172.19.*|172.20.*|172.21.*|172.22.*|172.23.*|172.24.*|172.25.*|172.26.*|172.27.*|172.28.*|172.29.*|172.30.*|172.31.*|192.168.*|100.64.0.0/10|*.svc.cluster.local|*.svc.cluster.local -Djdk.http.auth.tunneling.disabledSchemes= -Djdk.http.auth.proxying.disabledSchemes=
+Picked up _JAVA_OPTIONS: -XX:+UnlockDiagnosticVMOptions -XX:DisableIntrinsic=_base64_encodeBlock,_base64_decodeBlock
+WARNING: Using incubator modules: jdk.incubator.vector
+Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
+26/11/24 15:28:53 WARN Utils: Your hostname, vm, resolves to a loopback address: 127.0.0.1; using 192.0.2.2 instead (on interface eth0)
+26/11/24 15:28:53 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+26/11/24 15:28:53 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[15:29:05] r2 4x1 n=2048: cluster 9.5 s, application 13.2 s
+[15:29:13] r2 D 4x1 rowblock P=8  n=2048  rep=0 e2e    8.106 s job    7.940 crit-kernel    2.871 valid=yes
+[15:29:17] r2 D 4x1 rowblock P=8  n=2048  rep=1 e2e    3.650 s job    3.575 crit-kernel    2.266 valid=yes
+[15:29:22] r2 D 4x1 rowblock P=8  n=2048  rep=2 e2e    3.927 s job    3.854 crit-kernel    2.584 valid=yes
+[15:29:26] r2 D 4x1 rowblock P=8  n=2048  rep=3 e2e    4.102 s job    4.026 crit-kernel    2.972 valid=yes
+[15:29:30] r2 D 4x1 rowblock P=8  n=2048  rep=4 e2e    3.310 s job    3.246 crit-kernel    2.124 valid=yes
+[15:29:33] r2 D 4x1 rowblock P=8  n=2048  rep=5 e2e    3.256 s job    3.186 crit-kernel    2.210 valid=yes
+[15:29:35] r2 4x1 n=3072: NOT RUN (memory budget)
+Picked up JAVA_TOOL_OPTIONS: -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Djavax.net.ssl.trustStoreType=JKS -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=36843 -Dhttp.nonProxyHosts=localhost|127.0.0.1|::1|127.*|0.*|::|169.254.*|api.anthropic.com|api-staging.anthropic.com|api-pr-preview.anthropic.com|mcp-proxy.anthropic.com|mcp-proxy-staging.anthropic.com|registry.npmjs.org|jsr.io|npm.jsr.io|pypi.org|files.pythonhosted.org|index.crates.io|proxy.golang.org|host.docker.internal|10.*|172.16.*|172.17.*|172.18.*|172.19.*|172.20.*|172.21.*|172.22.*|172.23.*|172.24.*|172.25.*|172.26.*|172.27.*|172.28.*|172.29.*|172.30.*|172.31.*|192.168.*|100.64.0.0/10|*.svc.cluster.local|*.svc.cluster.local -Djdk.http.auth.tunneling.disabledSchemes= -Djdk.http.auth.proxying.disabledSchemes=
+Picked up _JAVA_OPTIONS: -XX:+UnlockDiagnosticVMOptions -XX:DisableIntrinsic=_base64_encodeBlock,_base64_decodeBlock
+Picked up JAVA_TOOL_OPTIONS: -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Djavax.net.ssl.trustStoreType=JKS -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=36843 -Dhttp.nonProxyHosts=localhost|127.0.0.1|::1|127.*|0.*|::|169.254.*|api.anthropic.com|api-staging.anthropic.com|api-pr-preview.anthropic.com|mcp-proxy.anthropic.com|mcp-proxy-staging.anthropic.com|registry.npmjs.org|jsr.io|npm.jsr.io|pypi.org|files.pythonhosted.org|index.crates.io|proxy.golang.org|host.docker.internal|10.*|172.16.*|172.17.*|172.18.*|172.19.*|172.20.*|172.21.*|172.22.*|172.23.*|172.24.*|172.25.*|172.26.*|172.27.*|172.28.*|172.29.*|172.30.*|172.31.*|192.168.*|100.64.0.0/10|*.svc.cluster.local|*.svc.cluster.local -Djdk.http.auth.tunneling.disabledSchemes= -Djdk.http.auth.proxying.disabledSchemes=
+Picked up _JAVA_OPTIONS: -XX:+UnlockDiagnosticVMOptions -XX:DisableIntrinsic=_base64_encodeBlock,_base64_decodeBlock
+WARNING: Using incubator modules: jdk.incubator.vector
+Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
+26/11/24 15:29:42 WARN Utils: Your hostname, vm, resolves to a loopback address: 127.0.0.1; using 192.0.2.2 instead (on interface eth0)
+26/11/24 15:29:42 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+26/11/24 15:29:42 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[15:29:50] r2 2x1 n=1024: cluster 5.5 s, application 9.4 s
+[15:29:53] r2 D 2x1 rowblock P=8  n=1024  rep=0 e2e    2.692 s job    2.581 crit-kernel    0.442 valid=yes
+[15:29:54] r2 D 2x1 rowblock P=8  n=1024  rep=1 e2e    1.126 s job    1.094 crit-kernel    0.418 valid=yes
+[15:29:55] r2 D 2x1 rowblock P=8  n=1024  rep=2 e2e    1.031 s job    0.990 crit-kernel    0.402 valid=yes
+[15:29:57] r2 D 2x1 rowblock P=8  n=1024  rep=3 e2e    0.979 s job    0.939 crit-kernel    0.438 valid=yes
+[15:29:58] r2 D 2x1 rowblock P=8  n=1024  rep=4 e2e    0.923 s job    0.894 crit-kernel    0.384 valid=yes
+[15:29:59] r2 D 2x1 rowblock P=8  n=1024  rep=5 e2e    0.904 s job    0.869 crit-kernel    0.403 valid=yes
+[15:30:02] r2 D 2x1 block2d  P=2  n=1024  rep=0 e2e    2.966 s job    2.965 crit-kernel    0.252 valid=yes
+[15:30:04] r2 D 2x1 block2d  P=2  n=1024  rep=1 e2e    1.930 s job    1.929 crit-kernel    0.214 valid=yes
+[15:30:06] r2 D 2x1 block2d  P=2  n=1024  rep=2 e2e    1.788 s job    1.786 crit-kernel    0.200 valid=yes
+[15:30:08] r2 D 2x1 block2d  P=2  n=1024  rep=3 e2e    1.636 s job    1.635 crit-kernel    0.219 valid=yes
+[15:30:10] r2 D 2x1 block2d  P=2  n=1024  rep=4 e2e    1.634 s job    1.632 crit-kernel    0.245 valid=yes
+[15:30:11] r2 D 2x1 block2d  P=2  n=1024  rep=5 e2e    1.425 s job    1.424 crit-kernel    0.276 valid=yes
+Picked up JAVA_TOOL_OPTIONS: -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Djavax.net.ssl.trustStoreType=JKS -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=36843 -Dhttp.nonProxyHosts=localhost|127.0.0.1|::1|127.*|0.*|::|169.254.*|api.anthropic.com|api-staging.anthropic.com|api-pr-preview.anthropic.com|mcp-proxy.anthropic.com|mcp-proxy-staging.anthropic.com|registry.npmjs.org|jsr.io|npm.jsr.io|pypi.org|files.pythonhosted.org|index.crates.io|proxy.golang.org|host.docker.internal|10.*|172.16.*|172.17.*|172.18.*|172.19.*|172.20.*|172.21.*|172.22.*|172.23.*|172.24.*|172.25.*|172.26.*|172.27.*|172.28.*|172.29.*|172.30.*|172.31.*|192.168.*|100.64.0.0/10|*.svc.cluster.local|*.svc.cluster.local -Djdk.http.auth.tunneling.disabledSchemes= -Djdk.http.auth.proxying.disabledSchemes=
+Picked up _JAVA_OPTIONS: -XX:+UnlockDiagnosticVMOptions -XX:DisableIntrinsic=_base64_encodeBlock,_base64_decodeBlock
+Picked up JAVA_TOOL_OPTIONS: -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Djavax.net.ssl.trustStoreType=JKS -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=36843 -Dhttp.nonProxyHosts=localhost|127.0.0.1|::1|127.*|0.*|::|169.254.*|api.anthropic.com|api-staging.anthropic.com|api-pr-preview.anthropic.com|mcp-proxy.anthropic.com|mcp-proxy-staging.anthropic.com|registry.npmjs.org|jsr.io|npm.jsr.io|pypi.org|files.pythonhosted.org|index.crates.io|proxy.golang.org|host.docker.internal|10.*|172.16.*|172.17.*|172.18.*|172.19.*|172.20.*|172.21.*|172.22.*|172.23.*|172.24.*|172.25.*|172.26.*|172.27.*|172.28.*|172.29.*|172.30.*|172.31.*|192.168.*|100.64.0.0/10|*.svc.cluster.local|*.svc.cluster.local -Djdk.http.auth.tunneling.disabledSchemes= -Djdk.http.auth.proxying.disabledSchemes=
+Picked up _JAVA_OPTIONS: -XX:+UnlockDiagnosticVMOptions -XX:DisableIntrinsic=_base64_encodeBlock,_base64_decodeBlock
+WARNING: Using incubator modules: jdk.incubator.vector
+Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
+26/11/24 15:30:20 WARN Utils: Your hostname, vm, resolves to a loopback address: 127.0.0.1; using 192.0.2.2 instead (on interface eth0)
+26/11/24 15:30:20 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+26/11/24 15:30:20 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[15:30:28] r2 2x1 n=2048: cluster 5.8 s, application 9.1 s
+[15:30:34] r2 D 2x1 rowblock P=8  n=2048  rep=0 e2e    5.601 s job    5.454 crit-kernel    2.429 valid=yes
+[15:30:37] r2 D 2x1 rowblock P=8  n=2048  rep=1 e2e    3.024 s job    2.902 crit-kernel    1.930 valid=yes
+[15:30:41] r2 D 2x1 rowblock P=8  n=2048  rep=2 e2e    3.134 s job    3.082 crit-kernel    2.095 valid=yes
+[15:30:44] r2 D 2x1 rowblock P=8  n=2048  rep=3 e2e    2.958 s job    2.899 crit-kernel    2.155 valid=yes
+[15:30:47] r2 D 2x1 rowblock P=8  n=2048  rep=4 e2e    2.859 s job    2.780 crit-kernel    1.956 valid=yes
+[15:30:50] r2 D 2x1 rowblock P=8  n=2048  rep=5 e2e    3.253 s job    3.197 crit-kernel    2.280 valid=yes
+[15:30:56] r2 D 2x1 block2d  P=2  n=2048  rep=0 e2e    5.385 s job    5.372 crit-kernel    1.047 valid=yes
+[15:31:01] r2 D 2x1 block2d  P=2  n=2048  rep=1 e2e    4.236 s job    4.230 crit-kernel    1.151 valid=yes
+[15:31:05] r2 D 2x1 block2d  P=2  n=2048  rep=2 e2e    3.975 s job    3.968 crit-kernel    1.025 valid=yes
+[15:31:09] r2 D 2x1 block2d  P=2  n=2048  rep=3 e2e    3.889 s job    3.882 crit-kernel    1.048 valid=yes
+[15:31:13] r2 D 2x1 block2d  P=2  n=2048  rep=4 e2e    3.962 s job    3.956 crit-kernel    1.162 valid=yes
+[15:31:17] r2 D 2x1 block2d  P=2  n=2048  rep=5 e2e    3.749 s job    3.743 crit-kernel    1.088 valid=yes
+[15:31:20] r2 G 2x1 rowblock P=2  n=2048  rep=0 e2e    2.789 s job    2.720 crit-kernel    2.024 valid=yes
+[15:31:23] r2 G 2x1 rowblock P=2  n=2048  rep=1 e2e    2.527 s job    2.465 crit-kernel    1.934 valid=yes
+[15:31:25] r2 G 2x1 rowblock P=2  n=2048  rep=2 e2e    2.630 s job    2.563 crit-kernel    2.035 valid=yes
+[15:31:28] r2 G 2x1 rowblock P=2  n=2048  rep=3 e2e    2.590 s job    2.525 crit-kernel    1.929 valid=yes
+[15:31:31] r2 G 2x1 rowblock P=2  n=2048  rep=4 e2e    2.441 s job    2.390 crit-kernel    1.946 valid=yes
+[15:31:34] r2 G 2x1 rowblock P=2  n=2048  rep=5 e2e    2.567 s job    2.504 crit-kernel    2.002 valid=yes
+[15:31:37] r2 G 2x1 rowblock P=4  n=2048  rep=0 e2e    2.829 s job    2.753 crit-kernel    1.144 valid=yes
+[15:31:40] r2 G 2x1 rowblock P=4  n=2048  rep=1 e2e    2.759 s job    2.655 crit-kernel    1.076 valid=yes
+[15:31:43] r2 G 2x1 rowblock P=4  n=2048  rep=2 e2e    2.723 s job    2.656 crit-kernel    1.077 valid=yes
+[15:31:45] r2 G 2x1 rowblock P=4  n=2048  rep=3 e2e    2.540 s job    2.475 crit-kernel    1.065 valid=yes
+[15:31:48] r2 G 2x1 rowblock P=4  n=2048  rep=4 e2e    2.615 s job    2.542 crit-kernel    1.104 valid=yes
+[15:31:51] r2 G 2x1 rowblock P=4  n=2048  rep=5 e2e    2.844 s job    2.752 crit-kernel    1.130 valid=yes
+[15:31:55] r2 G 2x1 rowblock P=32 n=2048  rep=0 e2e    3.777 s job    3.708 crit-kernel    1.452 valid=yes
+[15:31:59] r2 G 2x1 rowblock P=32 n=2048  rep=1 e2e    3.677 s job    3.595 crit-kernel    1.362 valid=yes
+[15:32:02] r2 G 2x1 rowblock P=32 n=2048  rep=2 e2e    3.246 s job    3.190 crit-kernel    1.173 valid=yes
+[15:32:06] r2 G 2x1 rowblock P=32 n=2048  rep=3 e2e    3.752 s job    3.684 crit-kernel    1.453 valid=yes
+[15:32:10] r2 G 2x1 rowblock P=32 n=2048  rep=4 e2e    3.544 s job    3.489 crit-kernel    1.310 valid=yes
+[15:32:14] r2 G 2x1 rowblock P=32 n=2048  rep=5 e2e    3.802 s job    3.740 crit-kernel    1.470 valid=yes
+[15:32:18] r2 G 2x1 rowblock P=64 n=2048  rep=0 e2e    4.090 s job    3.998 crit-kernel    1.347 valid=yes
+[15:32:23] r2 G 2x1 rowblock P=64 n=2048  rep=1 e2e    3.991 s job    3.926 crit-kernel    1.406 valid=yes
+[15:32:27] r2 G 2x1 rowblock P=64 n=2048  rep=2 e2e    3.799 s job    3.745 crit-kernel    1.346 valid=yes
+[15:32:31] r2 G 2x1 rowblock P=64 n=2048  rep=3 e2e    3.770 s job    3.691 crit-kernel    1.297 valid=yes
+[15:32:35] r2 G 2x1 rowblock P=64 n=2048  rep=4 e2e    4.012 s job    3.960 crit-kernel    1.410 valid=yes
+[15:32:39] r2 G 2x1 rowblock P=64 n=2048  rep=5 e2e    3.643 s job    3.585 crit-kernel    1.240 valid=yes
+Picked up JAVA_TOOL_OPTIONS: -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Djavax.net.ssl.trustStoreType=JKS -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=36843 -Dhttp.nonProxyHosts=localhost|127.0.0.1|::1|127.*|0.*|::|169.254.*|api.anthropic.com|api-staging.anthropic.com|api-pr-preview.anthropic.com|mcp-proxy.anthropic.com|mcp-proxy-staging.anthropic.com|registry.npmjs.org|jsr.io|npm.jsr.io|pypi.org|files.pythonhosted.org|index.crates.io|proxy.golang.org|host.docker.internal|10.*|172.16.*|172.17.*|172.18.*|172.19.*|172.20.*|172.21.*|172.22.*|172.23.*|172.24.*|172.25.*|172.26.*|172.27.*|172.28.*|172.29.*|172.30.*|172.31.*|192.168.*|100.64.0.0/10|*.svc.cluster.local|*.svc.cluster.local -Djdk.http.auth.tunneling.disabledSchemes= -Djdk.http.auth.proxying.disabledSchemes=
+Picked up _JAVA_OPTIONS: -XX:+UnlockDiagnosticVMOptions -XX:DisableIntrinsic=_base64_encodeBlock,_base64_decodeBlock
+Picked up JAVA_TOOL_OPTIONS: -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Djavax.net.ssl.trustStoreType=JKS -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=36843 -Dhttp.nonProxyHosts=localhost|127.0.0.1|::1|127.*|0.*|::|169.254.*|api.anthropic.com|api-staging.anthropic.com|api-pr-preview.anthropic.com|mcp-proxy.anthropic.com|mcp-proxy-staging.anthropic.com|registry.npmjs.org|jsr.io|npm.jsr.io|pypi.org|files.pythonhosted.org|index.crates.io|proxy.golang.org|host.docker.internal|10.*|172.16.*|172.17.*|172.18.*|172.19.*|172.20.*|172.21.*|172.22.*|172.23.*|172.24.*|172.25.*|172.26.*|172.27.*|172.28.*|172.29.*|172.30.*|172.31.*|192.168.*|100.64.0.0/10|*.svc.cluster.local|*.svc.cluster.local -Djdk.http.auth.tunneling.disabledSchemes= -Djdk.http.auth.proxying.disabledSchemes=
+Picked up _JAVA_OPTIONS: -XX:+UnlockDiagnosticVMOptions -XX:DisableIntrinsic=_base64_encodeBlock,_base64_decodeBlock
+WARNING: Using incubator modules: jdk.incubator.vector
+Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
+26/11/24 15:32:48 WARN Utils: Your hostname, vm, resolves to a loopback address: 127.0.0.1; using 192.0.2.2 instead (on interface eth0)
+26/11/24 15:32:48 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+26/11/24 15:32:48 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[15:32:56] r2 2x1 n=3072: cluster 5.7 s, application 9.5 s
+[15:33:07] r2 D 2x1 rowblock P=8  n=3072  rep=0 e2e   10.883 s job   10.626 crit-kernel    6.742 valid=yes
+[15:33:17] r2 D 2x1 rowblock P=8  n=3072  rep=1 e2e    9.487 s job    9.341 crit-kernel    7.467 valid=yes
+[15:33:27] r2 D 2x1 rowblock P=8  n=3072  rep=2 e2e    8.959 s job    8.766 crit-kernel    7.000 valid=yes
+[15:33:36] r2 D 2x1 rowblock P=8  n=3072  rep=3 e2e    8.547 s job    8.378 crit-kernel    6.676 valid=yes
+[15:33:48] r2 D 2x1 block2d  P=2  n=3072  rep=0 e2e   12.352 s job   12.319 crit-kernel    3.715 valid=yes
+[15:34:00] r2 D 2x1 block2d  P=2  n=3072  rep=1 e2e   11.209 s job   11.177 crit-kernel    3.502 valid=yes
+[15:34:12] r2 D 2x1 block2d  P=2  n=3072  rep=2 e2e   11.372 s job   11.340 crit-kernel    3.949 valid=yes
+[15:34:22] r2 D 2x1 block2d  P=2  n=3072  rep=3 e2e   10.208 s job   10.186 crit-kernel    4.884 valid=yes
+Picked up JAVA_TOOL_OPTIONS: -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Djavax.net.ssl.trustStoreType=JKS -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=36843 -Dhttp.nonProxyHosts=localhost|127.0.0.1|::1|127.*|0.*|::|169.254.*|api.anthropic.com|api-staging.anthropic.com|api-pr-preview.anthropic.com|mcp-proxy.anthropic.com|mcp-proxy-staging.anthropic.com|registry.npmjs.org|jsr.io|npm.jsr.io|pypi.org|files.pythonhosted.org|index.crates.io|proxy.golang.org|host.docker.internal|10.*|172.16.*|172.17.*|172.18.*|172.19.*|172.20.*|172.21.*|172.22.*|172.23.*|172.24.*|172.25.*|172.26.*|172.27.*|172.28.*|172.29.*|172.30.*|172.31.*|192.168.*|100.64.0.0/10|*.svc.cluster.local|*.svc.cluster.local -Djdk.http.auth.tunneling.disabledSchemes= -Djdk.http.auth.proxying.disabledSchemes=
+Picked up _JAVA_OPTIONS: -XX:+UnlockDiagnosticVMOptions -XX:DisableIntrinsic=_base64_encodeBlock,_base64_decodeBlock
+Picked up JAVA_TOOL_OPTIONS: -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Djavax.net.ssl.trustStoreType=JKS -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=36843 -Dhttp.nonProxyHosts=localhost|127.0.0.1|::1|127.*|0.*|::|169.254.*|api.anthropic.com|api-staging.anthropic.com|api-pr-preview.anthropic.com|mcp-proxy.anthropic.com|mcp-proxy-staging.anthropic.com|registry.npmjs.org|jsr.io|npm.jsr.io|pypi.org|files.pythonhosted.org|index.crates.io|proxy.golang.org|host.docker.internal|10.*|172.16.*|172.17.*|172.18.*|172.19.*|172.20.*|172.21.*|172.22.*|172.23.*|172.24.*|172.25.*|172.26.*|172.27.*|172.28.*|172.29.*|172.30.*|172.31.*|192.168.*|100.64.0.0/10|*.svc.cluster.local|*.svc.cluster.local -Djdk.http.auth.tunneling.disabledSchemes= -Djdk.http.auth.proxying.disabledSchemes=
+Picked up _JAVA_OPTIONS: -XX:+UnlockDiagnosticVMOptions -XX:DisableIntrinsic=_base64_encodeBlock,_base64_decodeBlock
+WARNING: Using incubator modules: jdk.incubator.vector
+Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
+26/11/24 15:34:29 WARN Utils: Your hostname, vm, resolves to a loopback address: 127.0.0.1; using 192.0.2.2 instead (on interface eth0)
+26/11/24 15:34:29 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+26/11/24 15:34:30 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[15:34:35] r2 1x1 n=1024: cluster 4.3 s, application 7.3 s
+[15:34:38] r2 D 1x1 rowblock P=8  n=1024  rep=0 e2e    2.541 s job    2.433 crit-kernel    0.564 valid=yes
+[15:34:40] r2 D 1x1 rowblock P=8  n=1024  rep=1 e2e    1.347 s job    1.313 crit-kernel    0.606 valid=yes
+[15:34:42] r2 D 1x1 rowblock P=8  n=1024  rep=2 e2e    1.496 s job    1.475 crit-kernel    0.643 valid=yes
+[15:34:43] r2 D 1x1 rowblock P=8  n=1024  rep=3 e2e    1.142 s job    1.103 crit-kernel    0.473 valid=yes
+[15:34:44] r2 D 1x1 rowblock P=8  n=1024  rep=4 e2e    1.080 s job    1.047 crit-kernel    0.497 valid=yes
+[15:34:45] r2 D 1x1 rowblock P=8  n=1024  rep=5 e2e    1.014 s job    0.992 crit-kernel    0.445 valid=yes
+[15:34:48] r2 D 1x1 block2d  P=2  n=1024  rep=0 e2e    2.409 s job    2.407 crit-kernel    0.228 valid=yes
+[15:34:50] r2 D 1x1 block2d  P=2  n=1024  rep=1 e2e    1.971 s job    1.970 crit-kernel    0.282 valid=yes
+[15:34:52] r2 D 1x1 block2d  P=2  n=1024  rep=2 e2e    1.726 s job    1.724 crit-kernel    0.215 valid=yes
+[15:34:54] r2 D 1x1 block2d  P=2  n=1024  rep=3 e2e    1.749 s job    1.747 crit-kernel    0.261 valid=yes
+[15:34:56] r2 D 1x1 block2d  P=2  n=1024  rep=4 e2e    1.618 s job    1.616 crit-kernel    0.220 valid=yes
+[15:34:57] r2 D 1x1 block2d  P=2  n=1024  rep=5 e2e    1.677 s job    1.675 crit-kernel    0.255 valid=yes
+Picked up JAVA_TOOL_OPTIONS: -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Djavax.net.ssl.trustStoreType=JKS -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=36843 -Dhttp.nonProxyHosts=localhost|127.0.0.1|::1|127.*|0.*|::|169.254.*|api.anthropic.com|api-staging.anthropic.com|api-pr-preview.anthropic.com|mcp-proxy.anthropic.com|mcp-proxy-staging.anthropic.com|registry.npmjs.org|jsr.io|npm.jsr.io|pypi.org|files.pythonhosted.org|index.crates.io|proxy.golang.org|host.docker.internal|10.*|172.16.*|172.17.*|172.18.*|172.19.*|172.20.*|172.21.*|172.22.*|172.23.*|172.24.*|172.25.*|172.26.*|172.27.*|172.28.*|172.29.*|172.30.*|172.31.*|192.168.*|100.64.0.0/10|*.svc.cluster.local|*.svc.cluster.local -Djdk.http.auth.tunneling.disabledSchemes= -Djdk.http.auth.proxying.disabledSchemes=
+Picked up _JAVA_OPTIONS: -XX:+UnlockDiagnosticVMOptions -XX:DisableIntrinsic=_base64_encodeBlock,_base64_decodeBlock
+Picked up JAVA_TOOL_OPTIONS: -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Djavax.net.ssl.trustStoreType=JKS -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=36843 -Dhttp.nonProxyHosts=localhost|127.0.0.1|::1|127.*|0.*|::|169.254.*|api.anthropic.com|api-staging.anthropic.com|api-pr-preview.anthropic.com|mcp-proxy.anthropic.com|mcp-proxy-staging.anthropic.com|registry.npmjs.org|jsr.io|npm.jsr.io|pypi.org|files.pythonhosted.org|index.crates.io|proxy.golang.org|host.docker.internal|10.*|172.16.*|172.17.*|172.18.*|172.19.*|172.20.*|172.21.*|172.22.*|172.23.*|172.24.*|172.25.*|172.26.*|172.27.*|172.28.*|172.29.*|172.30.*|172.31.*|192.168.*|100.64.0.0/10|*.svc.cluster.local|*.svc.cluster.local -Djdk.http.auth.tunneling.disabledSchemes= -Djdk.http.auth.proxying.disabledSchemes=
+Picked up _JAVA_OPTIONS: -XX:+UnlockDiagnosticVMOptions -XX:DisableIntrinsic=_base64_encodeBlock,_base64_decodeBlock
+WARNING: Using incubator modules: jdk.incubator.vector
+Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
+26/11/24 15:35:04 WARN Utils: Your hostname, vm, resolves to a loopback address: 127.0.0.1; using 192.0.2.2 instead (on interface eth0)
+26/11/24 15:35:04 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+26/11/24 15:35:04 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[15:35:10] r2 1x1 n=2048: cluster 3.6 s, application 7.1 s
+[15:35:17] r2 D 1x1 rowblock P=8  n=2048  rep=0 e2e    6.316 s job    6.105 crit-kernel    3.937 valid=yes
+[15:35:22] r2 D 1x1 rowblock P=8  n=2048  rep=1 e2e    5.063 s job    4.991 crit-kernel    3.995 valid=yes
+[15:35:27] r2 D 1x1 rowblock P=8  n=2048  rep=2 e2e    4.674 s job    4.591 crit-kernel    3.718 valid=yes
+[15:35:32] r2 D 1x1 rowblock P=8  n=2048  rep=3 e2e    4.702 s job    4.601 crit-kernel    3.722 valid=yes
+[15:35:37] r2 D 1x1 rowblock P=8  n=2048  rep=4 e2e    4.868 s job    4.815 crit-kernel    4.042 valid=yes
+[15:35:42] r2 D 1x1 rowblock P=8  n=2048  rep=5 e2e    4.662 s job    4.564 crit-kernel    3.866 valid=yes
+[15:35:49] r2 D 1x1 block2d  P=2  n=2048  rep=0 e2e    6.989 s job    6.948 crit-kernel    1.927 valid=yes
+[15:35:55] r2 D 1x1 block2d  P=2  n=2048  rep=1 e2e    6.166 s job    6.160 crit-kernel    1.863 valid=yes
+[15:36:01] r2 D 1x1 block2d  P=2  n=2048  rep=2 e2e    5.743 s job    5.737 crit-kernel    1.839 valid=yes
+[15:36:07] r2 D 1x1 block2d  P=2  n=2048  rep=3 e2e    5.822 s job    5.814 crit-kernel    1.831 valid=yes
+[15:36:13] r2 D 1x1 block2d  P=2  n=2048  rep=4 e2e    5.769 s job    5.763 crit-kernel    1.847 valid=yes
+[15:36:19] r2 D 1x1 block2d  P=2  n=2048  rep=5 e2e    5.902 s job    5.895 crit-kernel    1.862 valid=yes
+Picked up JAVA_TOOL_OPTIONS: -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Djavax.net.ssl.trustStoreType=JKS -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=36843 -Dhttp.nonProxyHosts=localhost|127.0.0.1|::1|127.*|0.*|::|169.254.*|api.anthropic.com|api-staging.anthropic.com|api-pr-preview.anthropic.com|mcp-proxy.anthropic.com|mcp-proxy-staging.anthropic.com|registry.npmjs.org|jsr.io|npm.jsr.io|pypi.org|files.pythonhosted.org|index.crates.io|proxy.golang.org|host.docker.internal|10.*|172.16.*|172.17.*|172.18.*|172.19.*|172.20.*|172.21.*|172.22.*|172.23.*|172.24.*|172.25.*|172.26.*|172.27.*|172.28.*|172.29.*|172.30.*|172.31.*|192.168.*|100.64.0.0/10|*.svc.cluster.local|*.svc.cluster.local -Djdk.http.auth.tunneling.disabledSchemes= -Djdk.http.auth.proxying.disabledSchemes=
+Picked up _JAVA_OPTIONS: -XX:+UnlockDiagnosticVMOptions -XX:DisableIntrinsic=_base64_encodeBlock,_base64_decodeBlock
+Picked up JAVA_TOOL_OPTIONS: -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Djavax.net.ssl.trustStoreType=JKS -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=36843 -Dhttp.nonProxyHosts=localhost|127.0.0.1|::1|127.*|0.*|::|169.254.*|api.anthropic.com|api-staging.anthropic.com|api-pr-preview.anthropic.com|mcp-proxy.anthropic.com|mcp-proxy-staging.anthropic.com|registry.npmjs.org|jsr.io|npm.jsr.io|pypi.org|files.pythonhosted.org|index.crates.io|proxy.golang.org|host.docker.internal|10.*|172.16.*|172.17.*|172.18.*|172.19.*|172.20.*|172.21.*|172.22.*|172.23.*|172.24.*|172.25.*|172.26.*|172.27.*|172.28.*|172.29.*|172.30.*|172.31.*|192.168.*|100.64.0.0/10|*.svc.cluster.local|*.svc.cluster.local -Djdk.http.auth.tunneling.disabledSchemes= -Djdk.http.auth.proxying.disabledSchemes=
+Picked up _JAVA_OPTIONS: -XX:+UnlockDiagnosticVMOptions -XX:DisableIntrinsic=_base64_encodeBlock,_base64_decodeBlock
+WARNING: Using incubator modules: jdk.incubator.vector
+Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
+26/11/24 15:36:27 WARN Utils: Your hostname, vm, resolves to a loopback address: 127.0.0.1; using 192.0.2.2 instead (on interface eth0)
+26/11/24 15:36:27 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+26/11/24 15:36:27 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[15:36:33] r2 1x1 n=3072: cluster 4.4 s, application 7.7 s
+[15:36:50] r2 D 1x1 rowblock P=8  n=3072  rep=0 e2e   16.642 s job   16.304 crit-kernel   12.297 valid=yes
+[15:37:05] r2 D 1x1 rowblock P=8  n=3072  rep=1 e2e   14.141 s job   13.978 crit-kernel   12.338 valid=yes
+[15:37:20] r2 D 1x1 rowblock P=8  n=3072  rep=2 e2e   14.576 s job   14.387 crit-kernel   12.795 valid=yes
+[15:37:34] r2 D 1x1 rowblock P=8  n=3072  rep=3 e2e   13.944 s job   13.767 crit-kernel   12.294 valid=yes
+[15:37:52] r2 D 1x1 block2d  P=2  n=3072  rep=0 e2e   17.725 s job   17.685 crit-kernel    6.296 valid=yes
+[15:38:10] r2 D 1x1 block2d  P=2  n=3072  rep=1 e2e   17.082 s job   17.045 crit-kernel    6.259 valid=yes
+[15:38:26] r2 D 1x1 block2d  P=2  n=3072  rep=2 e2e   16.645 s job   16.604 crit-kernel    6.193 valid=yes
+[15:38:44] r2 D 1x1 block2d  P=2  n=3072  rep=3 e2e   16.979 s job   16.944 crit-kernel    6.429 valid=yes
+[15:38:45] done

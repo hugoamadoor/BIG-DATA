@@ -1,0 +1,5 @@
+# Kernel OOM-killer events during preliminary runs (dmesg). Container memory limit (cgroup): 6 GiB.
+# 2504 s: 2x1 rowblock n=4096, driver heap 2g, after many earlier runs in the same application
+# 2921 s: 2x1 block2d n=4096
+# 5784 s: 2x1 rowblock n=4096 (driver 1600m, executor 1200m), fourth multiplication
+# 6158 s: 4x1 rowblock n=3072 (executor 800m), third multiplication
