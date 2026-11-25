@@ -17,7 +17,7 @@ stage has its own code, inputs, raw measurements, analysis scripts and a written
 | 1 | [Basic matrix multiplication](Assignment01_AmadorHidalgo/) | How do Python, Java and C compare on the same naive triple-loop algorithm? | [PDF](Assignment01_AmadorHidalgo/report/Assignment01_AmadorHidalgo_Report.pdf) |
 | 2 | [Optimised and sparse multiplication](Assignment02_AmadorHidalgo/) | How much do loop reordering and cache blocking help, and when does a sparse (CSR) format beat dense? | [PDF](Assignment02_AmadorHidalgo/report/Assignment02_AmadorHidalgo_Report.pdf) |
 | 3 | [Parallel multiplication and vectorisation](Assignment03_AmadorHidalgo/) | How does the best kernel scale with OpenMP threads, and what does AVX2 vectorisation add? | [PDF](Assignment03_AmadorHidalgo/report/Assignment03_AmadorHidalgo_Report.pdf) |
-| 4 | Distributed multiplication | How does a Spark implementation scale with workers, and where does its time go? | (Assignment04_AmadorHidalgo_Report.pdf) |
+| 4 | Distributed multiplication | How does a Spark implementation scale with workers, and where does its time go? | [PDF](Assignment04_AmadorHidalgo_Report.pdf) |
 
 ## Key findings
 
